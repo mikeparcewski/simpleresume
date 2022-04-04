@@ -6,7 +6,7 @@ Developed as a way to (un)learn my react skills and see if I could actually righ
 
 Based on JSON Resume and some addition customization options, you can have your own cool react resume without writing a line of code.  Just customizing (or generating) some JSON.
 
-Sample (wickedagile.com)[wickedagile.com]
+Sample [wickedagile.com](https://wickedagile.com)
 
 ## Technologies/Libraries/Frameworks
 
