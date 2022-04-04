@@ -47,6 +47,7 @@ const Footer = (config: SimpleResume) => {
           {config.resume?.basics.profiles?.map((profile: Profile) => (
 
             <Tooltip 
+              key={ profile + "-tip"}
               arrow 
               placement="top"
               title={profile.network}
