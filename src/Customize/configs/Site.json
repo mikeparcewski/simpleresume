@@ -1,0 +1,14 @@
+{
+  "siteName": "WickedAgile",
+  "name": "Mike Parcewski",
+  "callOut": "Lead, Architect & Deliver", 
+  "pageTitle": "Mike Parcewski - People, Process & Technology",
+  "resumePageTitle": "My Resume",
+  "portfolioPageTitle": "Some Projects",
+  "skillsPageTitle": "My Skills",
+  "pageDescription": "Leader, Architect & Engineer with a focus on people, process and technology.",
+  "masthead": {
+    "youngAlt": "The Young Avatar!",
+    "todayAlt": "The Aged Avatar!"
+  }
+}

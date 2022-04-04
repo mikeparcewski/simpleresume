@@ -1,0 +1,413 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Michael Parcewski",
+    "label": "Human Architecture Lead, Cloud First NA",
+    "image": "",
+    "email": "mike.parcewski@gmail.com",
+    "phone": "",
+    "url": "",
+    "summary": "",
+    "location": {
+      "countryCode": "US",
+      "address": "United States"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "formike",
+        "url": "https://www.linkedin.com/in/formike/"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "Accenture",
+      "position": "Human Architecture Lead",
+      "startDate": "2021-01-31",
+      "endDate": "",
+      "highlights": [],
+      "summary": "Responsible for bringing together Cloud Native Architecture Principles and Modern Engineering Processes/Practices to deliver at scale for large programs or as part of organizational transformations.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "North America"
+    },
+    {
+      "name": "Accenture",
+      "position": "Modern Engineering Excellence Lead",
+      "startDate": "2019-10-31",
+      "endDate": "2021-01-31",
+      "highlights": [],
+      "summary": "Responsible for training Accenture clients and teams modern engineering principles and processes (think Domain Driven Design, xP, Agile flavors, Product Engineering, etc...) as part of enterprise delivery through hands on leadership and training programs.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "North America"
+    },
+    {
+      "name": "Accenture",
+      "position": "Cloud Native Delivery and Capabilities Lead",
+      "startDate": "2018-12-31",
+      "endDate": "2019-10-31",
+      "highlights": [],
+      "summary": "Architect and delivery lead for complex multi-speed (Cloud, Datacenter, and On-Premise) projects as part of our client transformations and greenfield development.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "North America"
+    },
+    {
+      "name": "Accenture",
+      "position": "Digital Transformation Architect",
+      "startDate": "2017-08-31",
+      "endDate": "2018-12-31",
+      "highlights": [],
+      "summary": "Helped develop and drive transformation (business and technology modernization) using value driven approaches with a sprinkling of common sense.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "North America"
+    },
+    {
+      "name": "Accenture",
+      "position": "Senior Microservices Architect",
+      "startDate": "2016-12-31",
+      "endDate": "2017-08-31",
+      "highlights": [],
+      "summary": "Architect, design and develop cloud native (and friendly) solutions for mission critical legacy applications to help them achieve both scaling and resiliency goals.",
+      "url": "https://www.linkedin.com/company/accenture/",
+      "location": "Charlotte, North Carolina Area"
+    },
+    {
+      "name": "DST Systems",
+      "position": "Enterprise Solutions Architect & Product Manager - Cloud, MicroServices, Integration and UX",
+      "startDate": "2016-01-31",
+      "endDate": "2016-12-31",
+      "highlights": [],
+      "summary": "Design and develop financial literacy and education software and programs utilizing best in breed technology, adult learning theory and gamification.",
+      "url": "https://www.linkedin.com/company/dst-systems/",
+      "location": "Greater Boston Area"
+    },
+    {
+      "name": "Wealth Management Systems, Inc (WMSI)",
+      "position": "Vice President Application Development",
+      "startDate": "2013-10-31",
+      "endDate": "2016-01-31",
+      "highlights": [],
+      "summary": "Developed and managed an innovative technology product and consulting team that solved a variety of problems (integration, compliance, marketing and education) across the financial services industry.",
+      "url": ""
+    },
+    {
+      "name": "S&P Capital IQ Financial Communications",
+      "position": "Director of Technology",
+      "startDate": "2007-10-31",
+      "endDate": "2013-10-31",
+      "highlights": [],
+      "summary": "Led the design, development and deployment of a new suite of product lines – over fifteen syndicated and sixty plus custom solutions – for customers like Singapore Stock Exchange, UBS, Bank of America/Merrill Lynch, and TD Ameritrade",
+      "url": ""
+    },
+    {
+      "name": "Experience",
+      "position": "Senior Manager, Software Development",
+      "startDate": "1999-09-30",
+      "endDate": "2007-11-30",
+      "highlights": [],
+      "summary": "Brought in during the early stages of VC funded start-up to build a design and engineering team for the development of a set of sites and suite of tools to help college students and recent graduates get their first jobs as well as career centers place candidates with their partners.",
+      "url": ""
+    },
+    {
+      "name": "Database Technologies",
+      "position": "Staff Consultant",
+      "startDate": "1999-02-28",
+      "endDate": "1999-09-30",
+      "highlights": [],
+      "summary": "Wrote code, chewed bubble gum and...",
+      "url": "https://www.linkedin.com/company/database-technologies/"
+    },
+    {
+      "name": "National Leisure Group",
+      "position": "Lead Designer & Engineer",
+      "startDate": "1997-03-31",
+      "endDate": "1999-02-28",
+      "highlights": [],
+      "summary": "Designed, developed and managed the first ever online travel sites with \"real-ish\" time pricing that was cobranded for partners like MasterCard, BJ's Wholesale Club, and more.  The technology and design became the base for the first expedia.com",
+      "url": ""
+    }
+  ],
+  "volunteer": [],
+  "education": [],
+  "awards": [],
+  "certificates": [],
+  "publications": [],
+  "skills": [
+    {
+      "name": "Product Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Team Building",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Business Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Technical Leadership",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Security",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Hybrid Cloud",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "React.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud Computing",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Mobile Applications",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Train the Trainer",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Quality Assurance",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "DevOps",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Bash",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Domain-Driven Design (DDD)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test Driven Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Software Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Strategy",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Web 3.0",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Project Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Agile Methodologies",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Lean Startup",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Test Automation",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Cloud-Native Architecture",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Integration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Architectures",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Delivery",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scaled Agile Framework",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Behavior-Driven Development (BDD)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scala",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Process Improvement",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Kubernetes",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Google Cloud Platform (GCP)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Application Development",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Engineering",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Node.js",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Integration",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "E-commerce",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Product Management",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Scrum",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Python (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Extreme Programming",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Go (Programming Language)",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Start-ups",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "Entrepreneurship",
+      "level": "",
+      "keywords": []
+    },
+    {
+      "name": "User Experience",
+      "level": "",
+      "keywords": []
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native Speaker"
+    }
+  ],
+  "interests": [],
+  "references": [
+    {
+      "name": "Sara Hammond",
+      "reference": "Mike continued to amaze me at my time at FC because of his ability to adapt and utilize new technologies based on his clients needs and wants.  I have never seen someone put together a tablet application, Flex application, or any type of web application as efficiently and quickly as Mike did.  His ability to produce out of thin air was nothing short of miraculous. \r\n\r\nI worked for him for over three years, and he has pushed me hard, but the push has trained me for all of my future jobs to be the best and the brightest."
+    },
+    {
+      "name": "Jenny Floren Sozzi",
+      "reference": "Mike was a valuable member of our start-up team at Experience. He's not afraid to tackle the toughest challenges.  I'd be delighted to serve as a reference for MP at any time."
+    },
+    {
+      "name": "Ken Berquist (He, Him, His)",
+      "reference": "Mike has a way to complete a 30 day development project in 20 days, and the work is creative and the results flawless. He is more than someone who gets the job done, he is a very creative thinker which usually equates to a simplified and more stable developoment approach.\r\nMike is a great guy with a ever present quick sense of humor!"
+    }
+  ],
+  "projects": [],
+  "meta": {
+    "version": "v1.0.0",
+    "canonical": "https://github.com/jsonresume/resume-schema/blob/v1.0.0/schema.json"
+  }
+}

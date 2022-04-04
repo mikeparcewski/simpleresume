@@ -1,0 +1,193 @@
+{
+    "basics": {
+      "profiles": [
+        {
+          "network": "GitHub",
+          "username": "mikeparcewski",
+          "url": "https://github.com/mikeparcewski"
+        },        
+        {
+          "network": "Twitter",
+          "username": "@wickedagile",
+          "url": "https://twitter.com/wickedagile"
+        }
+      ]
+      },
+    "projects": [
+      {
+        "name": "BDD For All",
+        "description": "Flexible test harness that enables teams to easily integrate Behavior - and Test - Driven Development (BDD/TDD) into their daily development while promoting automation, transparency and reporting in legacy and cloud environments.",
+        "highlights": [
+          "Official Accenture OpenSource Project",
+          "Used by multiple Fortune 100 clients"
+        ],
+        "keywords": [
+          "BDD",
+          "JAVA",
+          "Gherkin",
+          "TDD"
+        ],
+        "url": "https://github.com/Accenture/bdd-for-all",
+        "img": "https://github.com/Accenture/bdd-for-all/raw/develop/docs/samples/bdd-white-logo.png",
+        "roles": [
+          "Creator"
+        ],
+        "type": "Open Source Library"
+      },
+      {
+        "name": "Outdoor Table",
+        "description": "Built based on a picture, this table was designed for six and to last the wear and tear that go along with a popular beach rental property. An outdoor, all-weather and hurricane proof (yet to be tested) has provided the setting for family meals to visitors from all over.",
+        "highlights": [
+          "Designed from a picture",
+          "Built to survive extreme weather and use",
+          "Over 100 cuts joined by pocket screws and wood glue"
+        ],
+        "img": "https://media.giphy.com/media/FZcfmXRr9AEgUFMhC1/giphy-downsized-large.gif",
+        "roles": [
+          "Designer",
+          "Builder"
+        ],
+        "type": "Handmade"
+      },
+      {
+        "name": "Reactive OpenAPI",
+        "description": "A reference application built with OpenAPI, Spring Reactor, & MongoDB that showcases real work implementation examples around Event Driven Architecture, Behavior Driven Development, Code Quality/Security and so much more.",
+        "highlights": [
+          "Used to train teams in Spring Reactor & Event Driven Architecture",
+          "Showcases DIY code quality and security techniques",
+          "Examples of BDD in the wild",
+          "Switch between Kafka, RabbitMQ, AWS, Azure & GCP for eventing"
+        ],
+        "keywords": [
+          "Reactive APIs",
+          "MongoDB",
+          "JAVA",
+          "BDD",
+          "Event Driven Architecture",
+          "Code Quality & Security"
+        ],
+        "url": "https://github.com/mikeparcewski/reactiveOpenAPI",
+        "img": "https://raw.githubusercontent.com/mikeparcewski/reactiveOpenAPI/5c6936b39f6db14e4e081ad26a17849e422ca440/branded-reactive.png",
+        "roles": [
+          "Creator"
+        ],
+        "type": "Ref Implementation"
+      },
+      {
+        "name": "This Site!",
+        "description": "Built on React and inspired by a bunch of different tech and people, the 'Simple Resume' project is an attempt to brush up on my react skills while showcasing some other fun technologies.",
+        "highlights": [
+          "Open sourced under the MIT license",
+          "Easily configured and customized all via JSON files",
+          "Written in Typescript"
+        ],
+        "keywords": [
+          "Typescript",
+          "React",
+          "Open Source"
+        ],
+        "url": "https://github.com/mikeparcewski/simpleresume",
+        "img": "https://media.giphy.com/media/VlZJDMFv9ZxfJ3pox4/giphy.gif",
+        "roles": [
+          "Designer",
+          "Developer"
+        ],
+        "type": "Open Source Library"
+      },      
+      {
+        "name": "Lazy Susan",
+        "description": "While on vacation saw a lazy susan and thought 'I could do that'.  The result is an epoxy resin beach scene with turtle handles on lazy susan built from spare wood and parts.",
+        "highlights": [
+          "Built completely with leftover wood, hardware and paint",
+          "Third ever painted project (thanks Bob Ross!)"
+        ],
+        "keywords": [
+          "Painting",
+          "Decor"
+        ],
+        "img": "https://media.giphy.com/media/GZI8z3FbcvRkSgRZSY/giphy.gif",
+        "roles": [
+          "Designer",
+          "Builder",
+          "Painter"
+        ],
+        "type": "Handmade"
+      },      
+      {
+        "name": "DragonflyOIB",
+        "description": "Located in Ocean Isle Beach, NC the Dragonfly is a house I gutted, remodled and run as rental. Designed as the Cheers of beach houses, I've developed social media marketing programs, a website, and custom branded gifts to promote and retain.",
+        "highlights": [
+          "Completely remodeled - did electrical, plumbing, walls and cabinets",
+          "Built furniture indoors and out",
+          "Developed react website",
+          "Developed marketing programs for Facebook, Instagram & Snapchat",
+          "Maintained as an LLC"
+        ],
+        "img": "https://api.apify.com/v2/key-value-stores/ZTlwCggzx0aizO82F/records/dragonflyoib.com-scroll_original",
+        "url": "https://dragonflyoib.com",
+        "roles": [
+          "Owner",
+          "Designer",
+          "Builder"
+        ],
+        "type": "Rental"
+      },
+      {
+        "name": "Entryway Table",
+        "description": "Built for the entryway it sits in, this entryway table/cabinet was designed from a bunch of different pictures my wife liked.  Oversized and built with rustic hardware, the hardest part was to build drawers without the sliding hardware (just wood pieces)",
+        "highlights": [
+          "Based on hodgepodge of pinterest ideas",
+          "Impossible to move (truly solid)"
+        ],
+        "keywords": [
+          "Furniture",
+          "Farmhouse Design"
+        ],
+        "img": "https://media.giphy.com/media/68mirwYTwoAXWG3RC1/giphy.gif",
+        "roles": [
+          "Designer",
+          "Builder"
+        ],
+        "type": "Handmade"
+      },      
+      {
+        "name": "Serverless on Azure",
+        "description": "Based on on publicalbum.orgs google photos embed, this python serverless function lets you embed your google photos public albums in your website seamlessly by returning a json payload ready for whatever you can dream up.",
+        "highlights": [
+          "Used to help teams understand Visual Studio integration with VS Code",
+          "Showcase using lightweight functions instead of contasiners"
+        ],
+        "keywords": [
+          "Python",
+          "Serverless",
+          "Azure",
+          "Google Photos"
+        ],
+        "url": "https://github.com/mikeparcewski/gphotos-serverless",
+        "img": "https://media.giphy.com/media/og64obU2gSaXh8SPhQ/giphy.gif",
+        "roles": [
+          "Creator"
+        ],
+        "type": "Training App"
+      },      
+      {
+        "name": "A Good Readme",
+        "description": "Going to a repo with code and no README is more common than I would of hoped.  Working with lots of different organizations I've noticed it's even more common internally.  This Gist is really about what good could look like.",
+        "highlights": [
+          "Used with dozens of Fortune 50 and 100 companies as an example of how to layout",
+          "Showcase using lightweight functions instead of contasiners"
+        ],
+        "keywords": [
+          "README",
+          "Markdown",
+          "Best Practices"
+        ],
+        "url": "https://gist.github.com/mikeparcewski/e5409a8febd3700e07a79b1276256d9c",
+        "img": "https://media.giphy.com/media/BktVOgussh37LhZdAR/giphy.gif",
+        "roles": [
+          "Creator"
+        ],
+        "type": "Open Source Library"
+      }
+    ]    
+}

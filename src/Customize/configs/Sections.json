@@ -1,0 +1,22 @@
+{
+    "mainSections": [
+        {
+          "name": "People",
+          "iconName": "groups",
+          "description": "Everything good in my life has been because of people around me.  We’ve taught each other, we’ve won together and lost together.  In what I see of the three most important ingredients to success - people, process and technology - people are definitely the most important.   With the right people we can find ways to make anything work, regardless of the obstacles presented.",
+          "img" : "coming soon"
+        },
+        {
+          "name": "Process",
+          "iconName": "developer_board",
+          "description": "With the right processes and ways of working, you can provide the blueprint for any teams success.  What I’ve discovered over the years is that process isn’t a one size fits all solution.   Understanding the team, it’s constraints, program constraints, skills and a host of other important factors is critical to developing hybrid solutions (WickedAgile!) to fit the current situation.  Once in place, it’s critical we constantly review and evolve as the team, product(s) and organization does.",
+          "img" : "coming soon"
+        },
+        {
+          "name": "Technology",
+          "iconName": "home_repair_service",
+          "description": "Last on the list for a reason - technology is still important.  It’s our toolbox that helps us build new things and fix old things.  The trick here is not becoming beholden to a particular technology, framework or stack.  Do you use the same vendor for everything?  Do you use the same knife to cut everything in your kitchen?  Hammers go good with nails, but not with screws.  What your teams need is someone who has worked across a lot of technologies.  Had their hands dirty and code and configuration and understands the importance of quality and security.",
+          "img" : "coming soon"
+        }
+    ]
+}

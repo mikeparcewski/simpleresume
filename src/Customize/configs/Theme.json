@@ -1,0 +1,31 @@
+{
+    "palette": {
+        "primary": {
+          "main": "#2D3E4F",
+          "contrastText": "#FFFFFF"
+        },
+        "secondary": {
+          "main": "#1A252F",
+          "contrastText": "#FFFFFF"
+        },
+        "warning": {
+          "main": "#18BC9B",
+          "contrastText": "#FFFFFF"
+        }        
+      },
+    "typography": {
+      "body1": {
+        "fontFamily": "Montserrat"
+      },
+      "fontFamily": "Montserrat",
+      "caption": {
+        "fontFamily": "Loto"
+      },
+      "overline": {
+        "fontFamily": "Loto"
+      },
+      "body2": {
+        "fontFamily": "Montserrat"
+      }
+    }
+}
