@@ -1,9 +1,9 @@
 {
     "basics": {
         "profiles": [
-            { "network": "Resume", "url": "resume" },
+            { "network": "Work", "url": "resume" },
             { "network": "Skills", "url": "skills" },
-            { "network": "Portfolio", "url": "portfolio" }
+            { "network": "Projects", "url": "portfolio" }
         ]
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { IconButton, Link, Typography } from '@mui/material';
+import { IconButton, Link, Tooltip, Typography } from '@mui/material';
 import { Box } from '@mui/system';
 import { Profile, SimpleResume } from '../Objects/SimpleResume';
 import * as Config from '../Components/SiteConfig'
@@ -46,25 +46,46 @@ const Footer = (config: SimpleResume) => {
 
           {config.resume?.basics.profiles?.map((profile: Profile) => (
 
-            <IconButton
-              key={profile.network}
-              sx={{ 
-                px: "2vmax", 
-                color: "primary.contrastText",
-                fontSize: '3vmax',
-                fontWeight: "800",
+            <Tooltip 
+              arrow 
+              placement="top"
+              title={profile.network}
+              componentsProps={{
+                tooltip: {
+                  sx: {
+                    bgcolor: 'primary.contrastText',
+                    color: 'primary.main',
+                    fontSize: '1vmax',
+                    border: 1,
+                    '& .MuiTooltip-arrow': {
+                      color: 'primary.contrastText',
+                    },
+                  },
+                },
               }}
-              onClick={() => window.location.href = profile.url}
-            >
+              sx={{
+                color: "primary.main",
+              }}>
+              <IconButton
+                key={profile.network}
+                sx={{ 
+                  px: "2vmax", 
+                  color: "primary.contrastText",
+                  fontSize: '3vmax',
+                  fontWeight: "800",
+                }}
+                onClick={() => window.location.href = profile.url}
+              >
 
-                <FontAwesomeIcon 
-                  aria-label={profile.network}
-                  icon={[ 
-                      config && config.getIconPrefix ? config.getIconPrefix(profile.network) : Config.DEF_ICONDETAIL?.clz as IconPrefix, 
-                      config && config.getIconName ? config.getIconName(profile.network) : Config.DEF_ICONDETAIL?.name as IconName
-                  ]} 
-                />
-            </IconButton>
+                  <FontAwesomeIcon 
+                    aria-label={profile.network}
+                    icon={[ 
+                        config && config.getIconPrefix ? config.getIconPrefix(profile.network) : Config.DEF_ICONDETAIL?.clz as IconPrefix, 
+                        config && config.getIconName ? config.getIconName(profile.network) : Config.DEF_ICONDETAIL?.name as IconName
+                    ]} 
+                  />
+              </IconButton>
+            </Tooltip>
           ))}
 
         </Box>

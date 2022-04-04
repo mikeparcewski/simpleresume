@@ -11,11 +11,11 @@
         "clz": "fab",
         "name": "twitter"
     },  
-    "Portfolio": {
+    "Projects": {
         "clz": "fas",
         "name": "brush"
     },     
-    "Resume": {
+    "Work": {
         "clz": "fas",
         "name": "file-invoice"
     },
