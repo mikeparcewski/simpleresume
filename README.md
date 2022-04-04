@@ -1,4 +1,4 @@
-[![DeepScan grade](https://deepscan.io/api/teams/5417/projects/20612/branches/565625/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5417&pid=20612&bid=565625) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikeparcewski_simpleresume&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mikeparcewski_simpleresume)
+[![DeepScan grade](https://deepscan.io/api/teams/5417/projects/20612/branches/565625/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5417&pid=20612&bid=565625) [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=mikeparcewski_simpleresume&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=mikeparcewski_simpleresume) [![Build & Deploy to S3](https://github.com/mikeparcewski/simpleresume/actions/workflows/main.yml/badge.svg)](https://github.com/mikeparcewski/simpleresume/actions/workflows/main.yml)
 
 # Simple Resume Project
 
