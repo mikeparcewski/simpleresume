@@ -19,6 +19,6 @@
       "type": "image/png"
     }
   ],
-  "start_url": ".",
-  "display": "standalone"
+  "start_url": "/",
+  "display": "browser"
 }
