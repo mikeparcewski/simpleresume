@@ -9,13 +9,13 @@
         {
           "name": "Process",
           "iconName": "developer_board",
-          "description": "With the right processes and ways of working, you can provide the blueprint for any teams success.  What I’ve discovered over the years is that process isn’t a one size fits all solution.   Understanding the team, it’s constraints, program constraints, skills and a host of other important factors is critical to developing hybrid solutions (WickedAgile!) to fit the current situation.  Once in place, it’s critical we constantly review and evolve as the team, product(s) and organization does.",
+          "description": "Creating efficiencies in the way we work is a never-ending journey but one that’s well worth taking. Over the years I’ve worked with and for some amazing people and organizations who were early adapters of new methodologies, technologies and ways of thinking about product development. I feel incredibly lucky to have experienced first-hand how effective a team can be with the right processes and approaches to process refinement.",
           "img" : "coming soon"
         },
         {
           "name": "Technology",
           "iconName": "home_repair_service",
-          "description": "Last on the list for a reason - technology is still important.  It’s our toolbox that helps us build new things and fix old things.  The trick here is not becoming beholden to a particular technology, framework or stack.  Do you use the same vendor for everything?  Do you use the same knife to cut everything in your kitchen?  Hammers go good with nails, but not with screws.  What your teams need is someone who has worked across a lot of technologies.  Had their hands dirty and code and configuration and understands the importance of quality and security.",
+          "description": "Technology is important, but it's not the only thing that matters. At the end of the day, it's still just a tool. What's more important is how you use that tool. Do you use the same knife to cut everything in your kitchen? Hammers go good with nails, but not with screws. What your teams need is someone who has worked across a lot of technologies. Had their hands dirty and code and configuration and understands the importance of quality and security.",
           "img" : "coming soon"
         }
     ]
