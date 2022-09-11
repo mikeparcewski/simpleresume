@@ -134,253 +134,253 @@
   "publications": [],
   "skills": [
     {
-      "name": "Product Development",
-      "level": "",
+      "name": "Product Engineering",
+      "level": "60",
       "keywords": []
     },
     {
-      "name": "Software Development",
-      "level": "",
+      "name": "Operating Model Change",
+      "level": "55",
       "keywords": []
     },
     {
-      "name": "Team Building",
-      "level": "",
+      "name": "Digital Strategy & Transformation",
+      "level": "60",
       "keywords": []
     },
     {
-      "name": "Business Development",
-      "level": "",
+      "name": "SAFe, LeSS & DAD Agile Frameworks",
+      "level": "50",
       "keywords": []
     },
     {
-      "name": "Technical Leadership",
-      "level": "",
+      "name": "Enterprise Lean/XP",
+      "level": "45",
       "keywords": []
     },
     {
-      "name": "Cloud Security",
-      "level": "",
+      "name": "Design Thinking",
+      "level": "45",
       "keywords": []
     },
     {
-      "name": "Hybrid Cloud",
-      "level": "",
+      "name": "Adult Learning Theory",
+      "level": "35",
       "keywords": []
     },
     {
-      "name": "React.js",
-      "level": "",
+      "name": "Secure Engineering",
+      "level": "50",
       "keywords": []
     },
     {
-      "name": "Cloud Computing",
-      "level": "",
+      "name": "Cloud Native Architecture & Patterns",
+      "level": "60",
       "keywords": []
     },
     {
-      "name": "Mobile Applications",
-      "level": "",
+      "name": "Test Driven Development (TDD)",
+      "level": "35",
       "keywords": []
     },
     {
-      "name": "Train the Trainer",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Quality Assurance",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "DevOps",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Bash",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Domain-Driven Design (DDD)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Test Driven Development",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Software Architecture",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Web Services (AWS)",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Product Strategy",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Web 3.0",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Project Management",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Agile Methodologies",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microservices",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Microsoft Azure",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Lean Startup",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Test Automation",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Java",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Cloud-Native Architecture",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Continuous Integration",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Architectures",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Continuous Delivery",
-      "level": "",
-      "keywords": []
-    },
-    {
-      "name": "Scaled Agile Framework",
-      "level": "",
+      "name": "Acceptance Test Driven Development (ATDD)",
+      "level": "30",
       "keywords": []
     },
     {
       "name": "Behavior-Driven Development (BDD)",
-      "level": "",
+      "level": "50",
+      "keywords": []
+    },
+    {
+      "name": "DevSecOps",
+      "level": "54",
+      "keywords": []
+    },
+    {
+      "name": "Domain Driven Development (DDD)",
+      "level": "50",
+      "keywords": []
+    },
+    {
+      "name": "Event Driven Architectures",
+      "level": "60",
+      "keywords": []
+    },
+    {
+      "name": "API Architecture/Design/Management",
+      "level": "40",
+      "keywords": []
+    },
+    {
+      "name": "Coaching",
+      "level": "55",
+      "keywords": []
+    },
+    {
+      "name": "Amazon Web Services (AWS)",
+      "level": "46",
+      "keywords": []
+    },
+    {
+      "name": "Modern Engineering Excellence",
+      "level": "50",
+      "keywords": []
+    },
+    {
+      "name": "Web 3.0",
+      "level": "42",
+      "keywords": []
+    },
+    {
+      "name": "Large-scale/Modern Delivery",
+      "level": "45",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "41",
+      "keywords": []
+    },
+    {
+      "name": "Microsoft Azure",
+      "level": "46",
+      "keywords": []
+    },
+    {
+      "name": "Lean Startup",
+      "level": "39",
+      "keywords": []
+    },
+    {
+      "name": "Event Storming",
+      "level": "45",
+      "keywords": []
+    },
+    {
+      "name": "Serverless",
+      "level": "45",
+      "keywords": []
+    },
+    {
+      "name": "NoSQL Databases",
+      "level": "57",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "40",
       "keywords": []
     },
     {
       "name": "Scala",
-      "level": "",
+      "level": "45",
       "keywords": []
     },
     {
-      "name": "Process Improvement",
-      "level": "",
+      "name": "Kotlin",
+      "level": "37",
+      "keywords": []
+    },
+    {
+      "name": "Continuous Process Improvement",
+      "level": "57",
       "keywords": []
     },
     {
       "name": "Kubernetes",
-      "level": "",
+      "level": "47",
       "keywords": []
     },
     {
       "name": "Google Cloud Platform (GCP)",
-      "level": "",
+      "level": "46",
       "keywords": []
     },
     {
-      "name": "Application Development",
-      "level": "",
+      "name": "Angular",
+      "level": "35",
       "keywords": []
     },
     {
-      "name": "Product Engineering",
-      "level": "",
+      "name": "React",
+      "level": "38",
       "keywords": []
     },
     {
-      "name": "Node.js",
-      "level": "",
+      "name": "NodeJS",
+      "level": "38",
       "keywords": []
     },
     {
-      "name": "Integration",
-      "level": "",
+      "name": "Typescript",
+      "level": "36",
       "keywords": []
     },
     {
-      "name": "E-commerce",
-      "level": "",
+      "name": "Rust",
+      "level": "30",
+      "keywords": []
+    },    
+    {
+      "name": "Service Introduction & Enablement",
+      "level": "62",
       "keywords": []
     },
     {
-      "name": "Product Management",
-      "level": "",
+      "name": "Team Building",
+      "level": "54",
       "keywords": []
     },
     {
-      "name": "Scrum",
-      "level": "",
+      "name": "Vender & Third-Party Integration",
+      "level": "43",
       "keywords": []
     },
     {
-      "name": "Python (Programming Language)",
-      "level": "",
+      "name": "SAP",
+      "level": "25",
+      "keywords": []
+    },
+    {
+      "name": "ServiceNow",
+      "level": "28",
+      "keywords": []
+    },
+    {
+      "name": "Open Source Engineering",
+      "level": "48",
+      "keywords": []
+    },
+    {
+      "name": "Python",
+      "level": "37",
       "keywords": []
     },
     {
       "name": "Extreme Programming",
-      "level": "",
+      "level": "52",
       "keywords": []
     },
     {
       "name": "Go (Programming Language)",
-      "level": "",
+      "level": "34",
       "keywords": []
     },
     {
       "name": "Start-ups",
-      "level": "",
+      "level": "45",
       "keywords": []
     },
     {
       "name": "Entrepreneurship",
-      "level": "",
+      "level": "67",
       "keywords": []
     },
     {
       "name": "User Experience",
-      "level": "",
+      "level": "53",
       "keywords": []
     }
   ],
