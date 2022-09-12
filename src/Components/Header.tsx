@@ -20,6 +20,8 @@ import * as Config from '../Components/SiteConfig'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 import { Button } from '@mui/material';
+import ReactRoundedImage from 'react-rounded-image'
+
 
 type InputProps = {
   theme: typeof SiteTheme;
@@ -59,6 +61,12 @@ export default function Header(config: SimpleResume) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
+  let avatars : (typeof require)[] = [
+    require("../Customize/avatar.png"),
+    require("../Customize/avatar-old.png")
+  ];
+  let myAvatar = avatars[Math.round(Math.random())];
+
   const handleDrawerOpen = () => {
     setOpen(true);
   };
@@ -74,17 +82,49 @@ export default function Header(config: SimpleResume) {
         <Toolbar>
           
           <Box sx={{ display: "flex", flexGrow: 1 }}>
-            <Button
-                variant="text"
-                href="/"
-                sx={{
-                  fontSize: '2.3vmax',
-                  fontWeight: "700",
-                  color: "primary.contrastText",
-                  textTransform: 'uppercase',
-              }}>
-                {config.siteName}  
-            </Button>
+
+            <Box
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                paddingRight: ".3vmax"
+              }}            
+            >
+
+              <ReactRoundedImage
+                image={myAvatar} 
+                alt={config!.masthead?.youngAlt}
+                roundedSize="13"
+                imageWidth="60"
+                imageHeight="60"
+              ></ReactRoundedImage>
+
+            </Box>
+
+            <Box
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+              }}
+            >
+
+              <Button
+                  variant="text"
+                  href="/"
+                  sx={{
+                    fontSize: '2.3vmax',
+                    fontWeight: "700",
+                    color: "primary.contrastText",
+                    textTransform: 'uppercase',
+                }}>
+                  {config.siteName}  
+              </Button>
+
+
+            </Box>
+
           </Box>
 
           {config.resume?.basics.profiles?.map((profile: Profile) => (

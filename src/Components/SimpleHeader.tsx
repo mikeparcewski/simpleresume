@@ -2,7 +2,6 @@ import * as React from 'react';
 
 import { Box, Typography } from '@mui/material';
 import { SimpleResume } from '../Objects/SimpleResume';
-import ReactRoundedImage from 'react-rounded-image'
 
 export type SimpleHeaderParams = {
   title?: string;
@@ -26,15 +25,6 @@ const SimpleHeader = (props: SimpleHeaderParams) => {
           }}
         >
 
-          <Box>
-            <ReactRoundedImage
-              image={require('../Customize/avatar.png')} 
-              alt={props.conf!.masthead?.youngAlt}
-              roundedSize="13"
-              imageWidth="60"
-              imageHeight="60"
-            ></ReactRoundedImage>        
-          </Box>  
           <Box
             sx={{ alignItems: "center", mx: '1vmax' }}>
             <Typography
@@ -45,19 +35,10 @@ const SimpleHeader = (props: SimpleHeaderParams) => {
                 lineHeight: 1,
                 textTransform: 'uppercase',
               }}>
-                {props.title}
+                &lt; {props.title} /&gt;
             </Typography>              
-          </Box>
+          </Box>        
 
-          <Box>
-            <ReactRoundedImage
-              image={require('../Customize/avatar-old.png')} 
-              alt={props.conf!.masthead?.todayAlt}
-              roundedSize="13"
-              imageWidth="60"
-              imageHeight="60"
-            ></ReactRoundedImage>        
-          </Box>  
 
         </Box>
 

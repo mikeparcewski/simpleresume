@@ -10,7 +10,7 @@ import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
 const Footer = (config: SimpleResume) => {
 
   return (
-    <>
+    <>    
 
       <Box 
         display="flex"
