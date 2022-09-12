@@ -12,8 +12,8 @@ const Skills = (props: SimpleResume) => {
     conf: props
   };
 
-  const [width] = React.useState(window.innerWidth*.66);
-  const [height] = React.useState(window.innerHeight*.66);
+  const [width] = React.useState(window.innerWidth*.78);
+  const [height] = React.useState(window.innerHeight*.68);
 
   const canvasRef = useRef(null);
 
@@ -25,6 +25,7 @@ const Skills = (props: SimpleResume) => {
         (skill : Skill) => [ skill.name, skill.level ]
       ),
       shape: "circle",
+      color: "random-dark",
       minRotation: 0,
       maxRotation: 0,
       shrinkToFit: true,
