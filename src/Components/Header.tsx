@@ -8,6 +8,7 @@ import CssBaseline from '@mui/material/CssBaseline';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
+import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
@@ -62,6 +63,7 @@ export default function Header(config: SimpleResume) {
 
   const path = window.location.pathname;
   const homePages : string[] = [ "/", "", ];
+  const isHomepage = homePages.some(x=> x.includes(path));
 
   let avatars : (typeof require)[] = [
     require("../Customize/avatar.png"),
@@ -87,7 +89,7 @@ export default function Header(config: SimpleResume) {
 
           <Box    
               sx={{ 
-                display: homePages.some(x=> x.includes(path)) ? 'none' : { xs: 'none', md: 'flex' },
+                display: isHomepage ? 'none' : { xs: 'none', md: 'flex' },
                 alignItems: 'center',
                 justifyContent: 'center',
                 paddingRight: ".3vmax"
@@ -168,13 +170,7 @@ export default function Header(config: SimpleResume) {
               onClick={handleDrawerOpen}
               sx={{ ...(open && { display: "none"  }) }}
             >
-              <ReactRoundedImage
-                image={myAvatar} 
-                alt={config!.masthead?.youngAlt}
-                roundedSize="13"
-                imageWidth="40"
-                imageHeight="40"
-              ></ReactRoundedImage>
+              <MenuIcon />
             </IconButton>
           </Box>
 
@@ -195,10 +191,13 @@ export default function Header(config: SimpleResume) {
         anchor="right"
         open={open}
       >
+
         <DrawerHeader>
+
           <IconButton onClick={handleDrawerClose}>
             {theme.direction === 'rtl' ? <ChevronLeftIcon /> : <ChevronRightIcon />}
           </IconButton>
+
         </DrawerHeader>
         <Divider />
         <List>
@@ -231,6 +230,22 @@ export default function Header(config: SimpleResume) {
             </ListItem>
           ))}
         </List>
+
+        <Box sx={{ 
+          display: isHomepage ? 'none' : 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          paddingTop: '1vmax'
+        }}>
+          <ReactRoundedImage
+            image={myAvatar} 
+            alt={config!.masthead?.youngAlt}
+            roundedSize="0"
+            imageWidth="50"
+            imageHeight="50"
+          ></ReactRoundedImage>
+        </Box>
+
       </Drawer>
     </Box>
   );
