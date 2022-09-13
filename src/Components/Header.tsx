@@ -8,7 +8,6 @@ import CssBaseline from '@mui/material/CssBaseline';
 import List from '@mui/material/List';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import MenuIcon from '@mui/icons-material/Menu';
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import ListItem from '@mui/material/ListItem';
@@ -61,6 +60,9 @@ export default function Header(config: SimpleResume) {
   const theme = useTheme();
   const [open, setOpen] = React.useState(false);
 
+  const path = window.location.pathname;
+  const homePages : string[] = [ "/", "", ];
+
   let avatars : (typeof require)[] = [
     require("../Customize/avatar.png"),
     require("../Customize/avatar-old.png")
@@ -83,24 +85,25 @@ export default function Header(config: SimpleResume) {
           
           <Box sx={{ display: "flex", flexGrow: 1 }}>
 
-            <Box
-              style={{
-                display: 'flex',
+          <Box    
+              sx={{ 
+                display: homePages.some(x=> x.includes(path)) ? 'none' : { xs: 'none', md: 'flex' },
                 alignItems: 'center',
                 justifyContent: 'center',
                 paddingRight: ".3vmax"
-              }}            
+              }}                   
             >
 
               <ReactRoundedImage
                 image={myAvatar} 
                 alt={config!.masthead?.youngAlt}
                 roundedSize="13"
-                imageWidth="60"
-                imageHeight="60"
+                imageWidth="50"
+                imageHeight="50"
               ></ReactRoundedImage>
 
             </Box>
+
 
             <Box
               style={{
@@ -124,6 +127,7 @@ export default function Header(config: SimpleResume) {
 
 
             </Box>
+
 
           </Box>
 
@@ -164,7 +168,13 @@ export default function Header(config: SimpleResume) {
               onClick={handleDrawerOpen}
               sx={{ ...(open && { display: "none"  }) }}
             >
-              <MenuIcon />
+              <ReactRoundedImage
+                image={myAvatar} 
+                alt={config!.masthead?.youngAlt}
+                roundedSize="13"
+                imageWidth="40"
+                imageHeight="40"
+              ></ReactRoundedImage>
             </IconButton>
           </Box>
 
