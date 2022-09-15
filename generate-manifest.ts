@@ -5,7 +5,7 @@ const manifest = require(manifestFile);
     
 // update manifest
 manifest.name = custom.siteTitle;
-manifest.short_name = custom.basics.name;
+manifest.short_name = custom.resume.basics.name;
 manifest.description = custom.siteDescription;
     
 // write the latest
