@@ -1,4 +1,7 @@
 {
+  "siteTitle": "Mike Parcewski - People, Process & Technology",
+  "siteDescription": "Technology Executive, Modern Engineering Evangelist, and Cloud Native Architect/Engineer with a history of innovation and delivery and a focus of people, process and technology.",  
+  "resume": {
     "basics": {
       "name": "Mike Parcewski",
       "titles": [
@@ -242,4 +245,5 @@
         "type": "Open Source Library"
       }
     ]    
+  }
 }

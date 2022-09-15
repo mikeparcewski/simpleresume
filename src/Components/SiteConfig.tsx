@@ -15,11 +15,10 @@ type CONFIG_TYPE = {
 }
 
 const CONFIGS : CONFIG_TYPE[]  = [
-    { file: require("../Customize/configs/Site.json") },
     { element: "icons", file: require("../Customize/configs/Icons.json") },
     { element: "resume", file: require("../Customize/configs/SiteNav.json") },
-    { element: "resume", file: require("../Customize/MyResume.json") },
-    { element: "resume", file: require("../Customize/configs/ResumeOverrides.json") },
+    { file: require("../Customize/configs/ResumeOverrides.json") },
+    { element: "resume", file: require("../Customize/MyResume.json") }
 ];
 
 function SiteConfig() : SimpleResume {
@@ -36,6 +35,13 @@ function SiteConfig() : SimpleResume {
 
     // set the default (err) icon
     if (siteData.icons) DEF_ICONDETAIL = siteData.icons.unknown;
+
+    // lookup function for page title
+    siteData.getProfilePageTitle = (network: string) : string => {
+        return (siteData.resume?.basics.profiles
+            .reduce( (a, b) => a.network === network ? a : b)
+            .title as string);
+    }
 
     // lookup function for custom icons
     siteData.getIconName = ( name : string ) : IconName => {

@@ -7,7 +7,7 @@ import SimpleHeader, { SimpleHeaderParams } from './SimpleHeader';
 const Portfolio = (props: SimpleResume) => {
 
     let headerParams : Partial<SimpleHeaderParams> = {
-      title: props.portfolioPageTitle,
+      title: props.getProfilePageTitle && props.getProfilePageTitle("Projects"),
       conf: props
     };
 

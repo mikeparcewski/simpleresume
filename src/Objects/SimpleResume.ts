@@ -1,19 +1,13 @@
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
-import { HighlightSpan } from "typescript";
 
 export interface SimpleResume {
-    shortName?:                 string;
-    resume?:                    Resume;
-    pageTitle?:                 string;
-    masthead?:                  Masthead;
-    pageDescription?:           string;
-    mainSections?:              MainSection[];
-    icons?:                     Icon;
-    resumePageTitle?:           string;
-    portfolioPageTitle?:        string;
-    skillsPageTitle?:           string;
-    getIconName?(name : string):  IconName;
-    getIconPrefix?(name : string):  IconPrefix;
+    siteTitle?:                             string;
+    siteDescription?:                       string;
+    resume?:                                Resume;
+    icons?:                                 Icon;
+    getIconName?(name : string):            IconName;
+    getIconPrefix?(name : string):          IconPrefix;
+    getProfilePageTitle?(name : string):    string;
 }
 
 
@@ -24,18 +18,6 @@ export interface Icon {
 export interface IconDetail {
     clz?: string;
     name?: string;
-}
-
-export interface MainSection {
-    name?: string;
-    iconName?: string;
-    description?: string;
-    img?: string;
-}
-
-export interface Masthead {
-    youngAlt: string;
-    todayAlt: string;
 }
 
 export interface Resume {
@@ -73,7 +55,7 @@ export interface Award {
 }
 
 export interface Basics {
-    name:     string;
+    name:     string;    
     titles?:     string[];
     careerSummary?:    Highlight[];
     highlights?: Highlight[];
@@ -103,6 +85,7 @@ export interface Location {
 
 export interface Profile {
     network:  string;
+    title:    string;
     username: string;
     url:      string;
 }

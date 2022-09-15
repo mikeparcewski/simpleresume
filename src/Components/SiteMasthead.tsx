@@ -48,7 +48,7 @@ const SiteMasthead = (props: SimpleResume) => {
             >
               <ReactRoundedImage
                 image={require('../Customize/masthead-lead.gif')} 
-                alt={props && props.masthead?.youngAlt}
+                alt={props.siteTitle}
                 roundedSize="13"
                 imageWidth="230"
                 imageHeight="230"

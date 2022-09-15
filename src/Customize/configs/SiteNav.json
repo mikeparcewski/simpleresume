@@ -1,9 +1,21 @@
 {
     "basics": {
         "profiles": [
-            { "network": "Work", "url": "resume" },
-            { "network": "Skills", "url": "skills" },
-            { "network": "Projects", "url": "portfolio" }
+            { 
+                "network": "Work", 
+                "title": "Work_History",
+                "url": "resume" 
+            },
+            { 
+                "network": "Skills", 
+                "title": "Critical_Skills",
+                "url": "skills" 
+            },
+            { 
+                "network": "Projects", 
+                "title": "Select_Projects",
+                "url": "portfolio" 
+            }
         ]
     }
 }

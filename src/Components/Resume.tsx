@@ -12,7 +12,7 @@ import { useTheme } from '@mui/system';
 const Resume = (props: SimpleResume) => {
 
     let headerParams : Partial<SimpleHeaderParams> = {
-      title: props.resumePageTitle,
+      title: props.getProfilePageTitle && props.getProfilePageTitle("Work"),
       conf: props
     };
 
@@ -37,7 +37,7 @@ const Resume = (props: SimpleResume) => {
           {props.resume?.work.map((work : Work, index : number) => (
 
             <TimelineItem 
-              key={work} 
+              key={ "tli" + index } 
             >
 
               <TimelineOppositeContent

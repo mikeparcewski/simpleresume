@@ -73,28 +73,15 @@ Almost there, next up create your own favicons, easiest way...
 3. Click download
 4. Unzip and drag all images (minus the manifest file) into the `public/` file
 
-### Site Details
-Next up, we customize the site copy...
-
-1. Open up [src/Customize/configs/Site.json](src/Customize/configs/Site.json)
-
-TOOD - Document
-
-### Theme
-
-1. Open up [src/Customize/configs/Theme.json](src/Customize/configs/Theme.json)
-
-TODO - Document
-
-### Homepage Sections
-
-1. Open up [src/Customize/configs/Sections.json](src/Customize/configs/Sections.json)
-
-TODO - Document
-
-### Resume Overrides
+### Resume/Site Copy Overrides & Additions
 
 1. Open up [src/Customize/configs/ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json)
+
+TODO - Document
+
+### The Site Theme
+
+1. Open up [src/Customize/configs/Theme.json](src/Customize/configs/Theme.json)
 
 TODO - Document
 

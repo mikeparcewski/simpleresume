@@ -8,7 +8,7 @@ import WordCloud from "wordcloud";
 const Skills = (props: SimpleResume) => {
 
   let headerParams : Partial<SimpleHeaderParams> = {
-    title: props.skillsPageTitle,
+    title: props.getProfilePageTitle && props.getProfilePageTitle("Skills"),
     conf: props
   };
 

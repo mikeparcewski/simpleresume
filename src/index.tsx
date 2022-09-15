@@ -41,8 +41,8 @@ ReactDOM.render(
       <ThemeProvider theme={SiteTheme}>
 
         <Helmet>
-          <title>{simpleResume.pageTitle}</title>
-          <meta name="description" content={simpleResume.pageDescription} />
+          <title>{simpleResume.siteTitle}</title>
+          <meta name="description" content={simpleResume.siteDescription} />
         </Helmet>
 
         <Header {...simpleResume} />

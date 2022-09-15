@@ -98,7 +98,7 @@ export default function Header(config: SimpleResume) {
 
               <ReactRoundedImage
                 image={myAvatar} 
-                alt={config!.masthead?.youngAlt}
+                alt={config.siteTitle}
                 roundedSize="13"
                 imageWidth="50"
                 imageHeight="50"
@@ -239,7 +239,7 @@ export default function Header(config: SimpleResume) {
         }}>
           <ReactRoundedImage
             image={myAvatar} 
-            alt={config!.masthead?.youngAlt}
+            alt={config.siteTitle}
             roundedSize="0"
             imageWidth="50"
             imageHeight="50"

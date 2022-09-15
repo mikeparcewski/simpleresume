@@ -1,12 +1,12 @@
 const fs = require('fs');
-const custom = require('./src/Customize/configs/Site.json');
+const custom = require('./src/Customize/configs/ResumeOverrides.json');
 const manifestFile = './public/manifest.json';
 const manifest = require(manifestFile);
     
 // update manifest
-manifest.name = custom.pageTitle;
-manifest.short_name = custom.shortName;
-manifest.description = custom.pageDescription;
+manifest.name = custom.siteTitle;
+manifest.short_name = custom.basics.name;
+manifest.description = custom.siteDescription;
     
 // write the latest
 fs.writeFile(manifestFile, JSON.stringify(manifest, null, 2), function writeJSON(err) {
