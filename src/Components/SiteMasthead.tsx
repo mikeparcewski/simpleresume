@@ -2,8 +2,23 @@ import React from 'react';
 import ReactRoundedImage from 'react-rounded-image'
 import { Box, Container } from '@mui/material';
 import { SimpleResume } from '../Objects/SimpleResume';
+import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
+import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
+import { fontSize } from '@mui/system';
+
 
 const SiteMasthead = (props: SimpleResume) => {
+
+  const titles : string[] =  props.resume?.basics?.titles!;
+  let embedded = "<" + titles[0].replaceAll(" ", "_") + ">\n";
+  titles.slice(1).map((title : string, index : number) => (
+    embedded += "   <" + title.replaceAll(" ", "_") + " />\n"
+  ));
+  embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
+
+  const codeStyle : Object = {
+    fontSize: "1.3vmax"
+  }
 
     return (
 
@@ -43,28 +58,14 @@ const SiteMasthead = (props: SimpleResume) => {
 
             <Box
               sx={{
-                fontSize: '1.4vmax',
-                color: 'primary.contrastText',
-                fontWeight: "700",
-                ml: 3,
-                pb: '3vmax'
+                ml: { xs: 0, md: 6 },
+                pb: '3vmax',
+                maxWidth: "95%"
             }}>
 
-              &lt; {props.resume?.basics?.titles && props.resume?.basics?.titles[0].replaceAll(" ", "_") } &gt;
-
-              {props.resume?.basics?.titles!
-                .slice(1)
-                .map((title : string, index : number) => (
-                  <Box 
-                    key={"titles" + index}
-                    sx={{
-                      my: 1.3
-                  }}>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; {title.replaceAll(" ", "_")} /&gt;
-                  </Box>
-              ))}
-
-              &lt;/ {props.resume?.basics?.titles && props.resume?.basics?.titles[0].replaceAll(" ", "_") } &gt;
+              <SyntaxHighlighter language="xml" style={vs2015} showLineNumbers={false} customStyle={ codeStyle }>
+                  {embedded}
+              </SyntaxHighlighter>
 
             </Box>            
 
