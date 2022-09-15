@@ -4,7 +4,6 @@ import { Box, Container } from '@mui/material';
 import { SimpleResume } from '../Objects/SimpleResume';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-import { fontSize } from '@mui/system';
 
 
 const SiteMasthead = (props: SimpleResume) => {
