@@ -1,75 +1,63 @@
 import React from 'react';
-import { Box, Divider, Icon, Typography } from '@mui/material';
-import { MainSection } from '../Objects/SimpleResume';
+import { List, ListItem, ListItemIcon, ListItemText, ListSubheader, Typography } from '@mui/material';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Highlight } from '../Objects/SimpleResume';
+import { IconName, IconPrefix } from '@fortawesome/fontawesome-svg-core';
+
+export interface SectionData {
+  highlights: Highlight[];
+  compId: string;
+  separator?: string;
+  iconName: string;
+  iconPrefix: string;
+  header: string;
+}
  
-const AboutSection = (props: MainSection) => {
+const AboutSection = (data: SectionData) => {
 
     return (
       <>
 
-        <Box>
+        <List sx={{ }}>
 
-          <Typography
-            sx={{
-              fontSize: "3vmax",
-              fontWeight: "700",
-              color: 'primary.main',
-              textTransform: 'uppercase',
-              lineHeight: 1,
-              mt: '4vmax',
-            }}>
-            {props.name}            
-          </Typography>
+          <ListSubheader>
+            <Typography variant="h4" sx={{ mb: 2 }}>{ data.header }</Typography>
+          </ListSubheader>
 
-        </Box>
-
-        <Box
-          display="flex"
-          flexDirection="row"
+        {data.highlights.map((highlight: Highlight, index: number) => (
+          <ListItem 
+          disableGutters={true} 
+          key={data.compId + "-" + index}
           sx={{
-            alignItems: 'center',
-            my: 1
-        }}>
-
-          <Box>
-            <Divider 
+            alignItems: 'flex-start'
+          }}>
+            <ListItemIcon 
+              key={data.compId + "lii" + index}
               sx={{ 
-                borderBottomWidth: 5, 
-                backgroundColor: 'primary.main',
-                color: 'primary',
-                width: '8vmax',
-            }}/>
-          </Box>
-
-          <Box>
-            <Icon
-              sx={{
-                mx: 2,
-                fontSize: '4vmax',
-              }}
+                pt:1, 
+                pr:1,
+                justifyContent: "right" 
+            }}>
+              <FontAwesomeIcon
+                key={data.compId + "icon" + index}
+                icon={[
+                    data.iconPrefix as IconPrefix,
+                    data.iconName as IconName
+                ]}/>
+            </ListItemIcon>
+            <ListItemText
+              key={data.compId + "lit" + index}
             >
-              {props.iconName}
-            </Icon>
-          </Box>
+              <strong>{highlight.name} {data.separator}</strong> {highlight.summary}
+            </ListItemText>
+          </ListItem>
+          ))}
 
-          <Box>
-            <Divider 
-              sx={{ 
-                borderBottomWidth: 5, 
-                backgroundColor: 'primary.main',
-                color: 'primary',
-                width: '8vmax',
-            }}/>
-          </Box>
-
-        </Box>
-
-        <Box sx={{maxWidth: { sm: "70%", md: "40%" }, mx: "4vmax" }}>
-          {props.description}
-        </Box>    
+        </List> 
 
       </>
 
     )
 }
+
 export default AboutSection;

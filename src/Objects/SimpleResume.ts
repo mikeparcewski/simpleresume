@@ -1,9 +1,10 @@
 import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
+import { HighlightSpan } from "typescript";
 
 export interface SimpleResume {
     siteName?:                  string;
-    name?:                      string;
-    callOut?:                   string
+    shortName?:                 string;
+    callOut?:                   string;
     resume?:                    Resume;
     pageTitle?:                 string;
     masthead?:                  Masthead;
@@ -75,6 +76,9 @@ export interface Award {
 
 export interface Basics {
     name:     string;
+    titles?:     string[];
+    careerSummary?:    Highlight[];
+    highlights?: Highlight[];
     label:    string;
     picture:  string;
     email:    string;
@@ -84,6 +88,11 @@ export interface Basics {
     summary:  string;
     location: Location;
     profiles: Profile[];
+}
+
+export interface Highlight {
+    name:       string;
+    summary:    string;
 }
 
 export interface Location {

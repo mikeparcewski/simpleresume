@@ -44,10 +44,10 @@ const Footer = (config: SimpleResume) => {
             alignContent: 'center'
         }}>
 
-          {config.resume?.basics.profiles?.map((profile: Profile) => (
+          {config.resume?.basics.profiles?.map((profile: Profile, index: number) => (
 
             <Tooltip 
-              key={ profile + "-tip"}
+              key={ "profile-tip" + index}
               arrow 
               placement="top"
               title={profile.network}

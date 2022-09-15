@@ -12,7 +12,8 @@ const SiteMasthead = (props: SimpleResume) => {
         <Container 
           maxWidth={false}
           sx={{ 
-            py: '5vmax',
+            pt: '3vmax',
+            pb: '3vmax',
             bgcolor: 'warning.main',
             display: 'flex',
             justifyContent: 'center',
@@ -25,7 +26,7 @@ const SiteMasthead = (props: SimpleResume) => {
             sx={{
               alignItems: 'center',
               justifyContent: 'center',
-              my: 1
+              mt: 1,
           }}>
             
             <Box>
@@ -44,20 +45,34 @@ const SiteMasthead = (props: SimpleResume) => {
                 fontSize: '3vmax',
                 fontFamily: 'Montserrat',
                 color: 'primary.contrastText',
-                fontWeight: "700",
+                fontWeight: "700"
             }}>
-              {props && props.name!.toUpperCase()}
+              {props && props.resume!.basics!.name!.toUpperCase()}
             </Box>
 
             <Box
               sx={{
-                fontSize: '2vmax',
+                display: "flex",
+                fontSize: '1.2vmax',
                 fontFamily: 'Montserrat',
-                color: 'primary.contrastText',
+                color: 'primary.main',
                 fontWeight: "700",
+                mt: 1.5
             }}>
-              {props && props.callOut}
-            </Box>
+
+              {props.resume?.basics?.titles!.map((title : string, index : number) => (
+                  <Box 
+                    key={"titles" + index}
+                    sx={{
+                      textAlign: "center",
+                      alignContent: "center",
+                      justifyContent: "center",
+                      width: 1/3
+                  }}>
+                    {title.toUpperCase()}
+                  </Box>
+              ))}
+            </Box>            
 
           </Box>
 

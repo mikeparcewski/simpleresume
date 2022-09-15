@@ -1,12 +1,11 @@
 {
   "siteName": "WickedAgile",
-  "name": "Mike Parcewski",
-  "callOut": "Lead, Architect & Deliver", 
   "pageTitle": "Mike Parcewski - People, Process & Technology",
+  "shortName": "Mike Parcewski",
   "resumePageTitle": "Work_History",
   "portfolioPageTitle": "Projects",
   "skillsPageTitle": "Skills",
-  "pageDescription": "Leader, Architect & Engineer with a focus on people, process and technology.",
+  "pageDescription": "Technology Executive, Modern Engineering Evangelist, and Cloud Native Architect/Engineer with a history of innovation and delivery and a focus of people, process and technology.",
   "masthead": {
     "youngAlt": "The Young Avatar!",
     "todayAlt": "The Aged Avatar!"

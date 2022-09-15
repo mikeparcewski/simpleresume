@@ -1,5 +1,55 @@
 {
     "basics": {
+      "name": "Mike Parcewski",
+      "titles": [
+        "Technology Executive",
+        "Modern Engineering Evangelist",
+        "Human Architect"
+      ],
+      "careerSummary": [
+        {
+          "name": "Seasoned IT executive",
+          "summary": "with success in mobilizing and managing dynamic geographically diverse product engineering teams/programs."
+        },
+        {
+          "name": "Outcome-driven enabler",
+          "summary": "with a proven track record of complex large scale delivery spanning technologies, clouds and industries."
+        },
+        {
+          "name": "Visionary innovator",
+          "summary": "skilled at spearheading breakthrough ideas to reinvent processes, ignite disruption, and deliver scalable solutions."
+        },
+        {
+          "name": "Thought leader",
+          "summary": "responsible for coaching teams, programs and organizations in modern and product engineering delivery concepts."
+        },
+        {
+          "name": "Hands-on engineer",
+          "summary": "with a longstanding history in cloud native development, migration, modernization and digital transformation."
+        }
+      ],
+      "highlights": [
+        {
+          "name": "Accenture",
+          "summary": "Led the recovery efforts across multiple critical client projects, successfully bringing them back on track while saving both Accenture and our clients tens of millions of dollars from cost overruns and quality issues."
+        },
+        {
+          "name": "Accenture",
+          "summary": "Established an immersive training program focused on shifting legacy developers to cloud native engineers used both by internal Accenture teams and our clients resulting in both improved productivity (~35%) and higher retention rates (~25%)."
+        },
+        {
+          "name": "Accenture",
+          "summary": "Created an open-source Behavior Driven Development (BDD) test framework utilized by a variety of Accenture clients (and competitors) enabling product engineering teams to quickly and effectively test API’s using “customer” language."
+        },
+        {
+          "name": "DST Systems",
+          "summary": "Led the design, development, and deployment of over 15 syndicated and 60+ custom solutions for prominent clients such as, Bank of America/Merrill Lynch, Singapore Stock Exchange, UBS and TD Ameritrade."
+        },
+        {
+          "name": "Experience, Inc.",
+          "summary": "Built a first of its kind college recruiting application that used a series of custom algorithms to match students to employers for schools like Harvard, Tulane University and many others."
+        }
+      ],
       "profiles": [
         {
           "network": "GitHub",

@@ -16,7 +16,6 @@ type CONFIG_TYPE = {
 
 const CONFIGS : CONFIG_TYPE[]  = [
     { file: require("../Customize/configs/Site.json") },
-    { file: require("../Customize/configs/Sections.json") },
     { element: "icons", file: require("../Customize/configs/Icons.json") },
     { element: "resume", file: require("../Customize/configs/SiteNav.json") },
     { element: "resume", file: require("../Customize/MyResume.json") },
