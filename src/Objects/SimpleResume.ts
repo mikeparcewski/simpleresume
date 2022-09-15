@@ -2,9 +2,7 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 import { HighlightSpan } from "typescript";
 
 export interface SimpleResume {
-    siteName?:                  string;
     shortName?:                 string;
-    callOut?:                   string;
     resume?:                    Resume;
     pageTitle?:                 string;
     masthead?:                  Masthead;

@@ -124,7 +124,7 @@ export default function Header(config: SimpleResume) {
                     color: "primary.contrastText",
                     textTransform: 'uppercase',
                 }}>
-                  {config.siteName}  
+                  {config.resume?.basics.name}  
               </Button>
 
 

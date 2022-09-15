@@ -2,7 +2,7 @@ import React from 'react';
 import { Container, Typography } from '@mui/material';
 import { SimpleResume } from '../Objects/SimpleResume';
  
-const Copyright = (resume: SimpleResume) => {
+const Copyright = (site: SimpleResume) => {
     return (
 
       <>
@@ -22,7 +22,7 @@ const Copyright = (resume: SimpleResume) => {
               fontSize: "1.5vmax",
               fontWeight: "700",
             }}>
-            © Copyright {new Date().getFullYear()} {resume.siteName}
+            © Copyright {new Date().getFullYear()} by {site.resume?.basics.name}
           </Typography>
 
         </Container>

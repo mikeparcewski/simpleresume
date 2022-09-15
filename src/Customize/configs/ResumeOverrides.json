@@ -3,8 +3,9 @@
       "name": "Mike Parcewski",
       "titles": [
         "Technology Executive",
+        "People Leader",
         "Modern Engineering Evangelist",
-        "Human Architect"
+        "Enterprise Architect"
       ],
       "careerSummary": [
         {
@@ -24,8 +25,8 @@
           "summary": "responsible for coaching teams, programs and organizations in modern and product engineering delivery concepts."
         },
         {
-          "name": "Hands-on engineer",
-          "summary": "with a longstanding history in cloud native development, migration, modernization and digital transformation."
+          "name": "Hands-on engineer/architect",
+          "summary": "with a long history in cloud native development, migration, modernization and digital transformation."
         }
       ],
       "highlights": [

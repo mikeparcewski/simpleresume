@@ -1,6 +1,6 @@
 {
   "name": "Mike Parcewski - People, Process & Technology",
-  "description": "Leader, Architect & Engineer with a focus on people, process and technology.",
+  "description": "Technology Executive, Modern Engineering Evangelist, and Cloud Native Architect/Engineer with a history of innovation and delivery and a focus of people, process and technology.",
   "icons": [
     {
       "src": "favicon.ico",
@@ -19,5 +19,6 @@
     }
   ],
   "start_url": "/",
-  "display": "browser"
+  "display": "browser",
+  "short_name": "Mike Parcewski"
 }

@@ -13,7 +13,6 @@ const SiteMasthead = (props: SimpleResume) => {
           maxWidth={false}
           sx={{ 
             pt: '3vmax',
-            pb: '3vmax',
             bgcolor: 'warning.main',
             display: 'flex',
             justifyContent: 'center',
@@ -21,7 +20,6 @@ const SiteMasthead = (props: SimpleResume) => {
 
           <Box
             display="flex"
-            flexDirection="column"
             flexWrap="wrap"
             sx={{
               alignItems: 'center',
@@ -29,7 +27,11 @@ const SiteMasthead = (props: SimpleResume) => {
               mt: 1,
           }}>
             
-            <Box>
+            <Box
+              sx={{
+                pb: '3vmax'
+              }}
+            >
               <ReactRoundedImage
                 image={require('../Customize/masthead-lead.gif')} 
                 alt={props && props.masthead?.youngAlt}
@@ -41,37 +43,29 @@ const SiteMasthead = (props: SimpleResume) => {
 
             <Box
               sx={{
-                mt: '1vmax',
-                fontSize: '3vmax',
-                fontFamily: 'Montserrat',
+                fontSize: '1.4vmax',
                 color: 'primary.contrastText',
-                fontWeight: "700"
-            }}>
-              {props && props.resume!.basics!.name!.toUpperCase()}
-            </Box>
-
-            <Box
-              sx={{
-                display: "flex",
-                fontSize: '1.2vmax',
-                fontFamily: 'Montserrat',
-                color: 'primary.main',
                 fontWeight: "700",
-                mt: 1.5
+                ml: 3,
+                pb: '3vmax'
             }}>
 
-              {props.resume?.basics?.titles!.map((title : string, index : number) => (
+              &lt; {props.resume?.basics?.titles && props.resume?.basics?.titles[0].replaceAll(" ", "_") } &gt;
+
+              {props.resume?.basics?.titles!
+                .slice(1)
+                .map((title : string, index : number) => (
                   <Box 
                     key={"titles" + index}
                     sx={{
-                      textAlign: "center",
-                      alignContent: "center",
-                      justifyContent: "center",
-                      width: 1/3
+                      my: 1.3
                   }}>
-                    {title.toUpperCase()}
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt; {title.replaceAll(" ", "_")} /&gt;
                   </Box>
               ))}
+
+              &lt;/ {props.resume?.basics?.titles && props.resume?.basics?.titles[0].replaceAll(" ", "_") } &gt;
+
             </Box>            
 
           </Box>
