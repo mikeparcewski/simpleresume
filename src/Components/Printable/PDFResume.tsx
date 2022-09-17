@@ -45,13 +45,21 @@ const PDFResume = (site: SimpleResume) => {
       iconName: "fa-angles-right",
     }
 
+    // printing
+    let body = document.querySelector('body');
+    body?.style.setProperty('-webkit-print-color-adjust', 'exact');
+    body?.style.setProperty('-moz-print-color-adjust', 'exact');
+    body?.style.setProperty('-ms-print-color-adjust', 'exact');
+    body?.style.setProperty('print-color-adjust', 'exact');
+
     return (
 
       <>
 
         <Helmet>
-            <title>{site.resume?.basics.name.replace(" ", "_")}_resume</title>
-            <meta name="description" content={site.resume?.basics.name.replace(" ", "_") + "_resume"} />
+          <title>{site.resume?.basics.name.replace(" ", "_")}_resume</title>
+          <meta name="description" content={site.resume?.basics.name.replace(" ", "_") + "_resume"} />
+
         </Helmet>
 
         <CssBaseline />
