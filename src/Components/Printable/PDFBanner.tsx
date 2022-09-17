@@ -17,7 +17,7 @@ const PDFHeader = (site: SimpleResume) => {
             backgroundColor: "primary.main",
             color: "secondary.contrastText",
             p:1,
-            mt: 2,
+            mt: 1,
             alignItems: "center",
             justifyContent: "center",
             display: "flex"
@@ -31,7 +31,7 @@ const PDFHeader = (site: SimpleResume) => {
                   mr: 2,
                   px: 2,
                   borderLeft: index === 0 ? 0 : 1,
-                  fontSize: ".78vmax"
+                  fontSize: ".7vmax"
               }}>
                 {title}
               </Typography>

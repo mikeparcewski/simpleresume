@@ -58,6 +58,7 @@ export interface Basics {
     name:     string;    
     titles?:     string[];
     careerSummary?:    Highlight[];
+    interestingFacts?: Highlight[];
     highlights?: Highlight[];
     label:    string;
     picture:  string;

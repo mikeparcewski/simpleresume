@@ -8,12 +8,14 @@ import PDFBanner from './PDFBanner';
 import PDFHighlight, { SectionData } from './PDFHighlight';
 import PDFSkills, { PDFSkillsParam } from './PDFSkills';
 import PDFWork from './PDFWork';
+import { Helmet } from 'react-helmet';
+import PDFAdditionalSkills from './PDFAdditionalSkills';
  
 const PDFResume = (site: SimpleResume) => {
 
     const resume: Resume = site.resume!;
 
-    const maxHiglightSkills: number = 21;
+    const maxHiglightSkills: number = 18;
 
     const summary: SectionData = {
       highlights: resume?.basics.careerSummary!,
@@ -35,9 +37,22 @@ const PDFResume = (site: SimpleResume) => {
       numberOfSkills: maxHiglightSkills
     }  
 
+    const interesting: SectionData = {
+      highlights: resume?.basics.interestingFacts!,
+      compId: "interesting",
+      header: "OTHER INTERESTING FACTS",
+      iconPrefix: "fa-solid",
+      iconName: "fa-angles-right",
+    }
+
     return (
 
       <>
+
+        <Helmet>
+            <title>{site.resume?.basics.name.replace(" ", "_")}_resume</title>
+            <meta name="description" content={site.resume?.basics.name.replace(" ", "_") + "_resume"} />
+        </Helmet>
 
         <CssBaseline />
 
@@ -54,7 +69,7 @@ const PDFResume = (site: SimpleResume) => {
 
             <Box
               sx={{
-                width: "21cm",
+                width: "19.7cm",
                 alignItems: "left"
             }}>
 
@@ -70,30 +85,9 @@ const PDFResume = (site: SimpleResume) => {
 
               <PDFWork {...site.resume!}/>
 
+              <PDFAdditionalSkills {...skills} />
 
-              <Box
-                sx={{
-                  borderBottom: 1,
-                  fontSize: "1.3vmax",
-                  mb: 1
-              }}>
-                ADDITIONAL TOOLS, TECHNOLOGIES, & METHODOLOGIES
-              </Box>
-              <Box
-                sx={{
-                  fontSize: "1vmax",
-                }}>
-                {resume.skills
-                  .filter((skill: Skill, index: number) => index >= maxHiglightSkills)
-                  .map((skill: Skill, index: number) => (
-                  <span 
-                    key={"addskill" + index} 
-                  >
-                    { index > 0 && <span>, </span> }
-                    {skill.name}
-                  </span>
-                ))}
-              </Box>
+              <PDFHighlight {...interesting} />
 
             </Box>
 

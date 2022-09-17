@@ -33,6 +33,7 @@ const PDFHighlight = (data: SectionData) => {
               sx={{
                 borderBottom: 1,
                 fontSize: "1.3vmax",
+                mb: 1
             }}>
               {data.header.toUpperCase()}
             </Box>
@@ -43,7 +44,7 @@ const PDFHighlight = (data: SectionData) => {
                   key={data.compId + "row" + index}
                   sx={{
                     display: "flex",
-                    my: 1,
+                    my: .6,
                     fontSize: ".9vmax",
                 }}>
 

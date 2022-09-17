@@ -44,7 +44,7 @@ const PDFHeader = (site: SimpleResume) => {
           sx={{
             display: "flex",
             mt: 1.2,
-            fontSize: ".9vmax"
+            fontSize: ".8vmax"
         }}>
 
           { site.resume?.basics.email && 

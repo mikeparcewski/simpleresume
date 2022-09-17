@@ -55,6 +55,20 @@
           "summary": "Built a first of its kind college recruiting application that used a series of custom algorithms to match students to employers for schools like Harvard, Tulane University and many others."
         }
       ],
+      "interestingFacts": [
+        {
+          "name": "Designed and developed",
+          "summary": "the first iteration of expedia.com (both the front and back end) with only one other engineer. This included the first near real time travel pricing engine of its kind."
+        },
+        {
+          "name": "Worked as a private investigator",
+          "summary": "for a nationwide investigative firm, responsible for finding missing witnesses and dealing with complex insurance fraud cases."
+        },
+        {
+          "name": "Coached Football, Basketball and Soccer teams",
+          "summary": "from kindergarten to middle-school winning a few “championships” along the way and learning a lot from the kids about what it takes to lead diverse teams."
+        }
+      ],      
       "profiles": [
         {
           "network": "GitHub",
