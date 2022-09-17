@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, ThemeProvider } from '@mui/material';
-import { Resume, SimpleResume, Skill } from '../../Objects/SimpleResume';
+import { Resume, SimpleResume } from '../../Objects/SimpleResume';
 import { CssBaseline } from '@mui/material';
 import PrintTheme from '../PrintTheme';
 import PDFHeader from './PDFHeader';
