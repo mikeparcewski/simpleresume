@@ -1,0 +1,31 @@
+{
+    "palette": {
+        "primary": {
+          "main": "#2D3E4F",
+          "contrastText": "#000000"
+        },
+        "secondary": {
+          "main": "#1A252F",
+          "contrastText": "#FFFFFF"
+        },
+        "warning": {
+          "main": "#18BC9B",
+          "contrastText": "#FFFFFF"
+        }        
+      },
+    "typography": {
+      "body1": {
+        "fontFamily": "Helvetica Neue"
+      },
+      "fontFamily": "Helvetica Neue",
+      "caption": {
+        "fontFamily": "Segoe UI"
+      },
+      "overline": {
+        "fontFamily": "Segoe UI"
+      },
+      "body2": {
+        "fontFamily": "Helvetica Neue"
+      }
+    }
+}

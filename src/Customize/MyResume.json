@@ -6,7 +6,7 @@
     "image": "",
     "email": "mike.parcewski@gmail.com",
     "phone": "",
-    "url": "",
+    "url": "https://wickedagile.com",
     "summary": "",
     "location": {
       "countryCode": "US",
@@ -26,7 +26,15 @@
       "position": "Human Architecture Lead",
       "startDate": "2021-01-31",
       "endDate": "",
-      "highlights": [],
+      "highlights": [
+        "Constructed a rolling “incubator and innovation” solution to replace an existing Enterprise Architecture team at a Fortune 50 technology organization as part of a broader effort to synchronize cross-functional workgroups and their group of companies.",
+        "Developed a diversity hiring program focused on candidates that weren’t even making it into our pipelines but brought strong critical thinking and unique industry experience to our teams.",
+        "Defined the target architecture, technologies, and delivery roadmap of a property management system for an industry-leading hospitality company to elevate their customer engagement capabilities on and off property, including IoT devices.",
+        "Served as Lead Architect for the delivery of an enterprise legacy decoupling (application modernization/re-imagining) project for a Fortune 100 healthcare enterprise which streamlined the customer experience across online and in-person touchpoints.",
+        "Developed an API governance framework, operating model and platform that allowed a fortune 100 company to dramatically increase velocity (60%), while improving overall quality in a polyglot environment that facilitated new product development.",
+        "Integrated Domain Driven Design and Behavior Driven Development into the software development lifecycle (SDLC) at multiple Fortune 50, 100, and 500 clients, enabling them to grow at scale.",
+        "Worked as an SME across multiple client programs in topics ranging from program design and delivery, modern engineering practices, site reliability engineering, and multi-cloud architectures."
+      ],
       "summary": "Responsible for bringing together Cloud Native Architecture Principles and Modern Engineering Processes/Practices to deliver at scale for large programs or as part of organizational transformations.",
       "url": "https://www.linkedin.com/company/accenture/",
       "location": "North America"
@@ -69,62 +77,62 @@
       "highlights": [],
       "summary": "Architect, design and develop cloud native (and friendly) solutions for mission critical legacy applications to help them achieve both scaling and resiliency goals.",
       "url": "https://www.linkedin.com/company/accenture/",
-      "location": "Charlotte, North Carolina Area"
+      "location": "North America"
     },
     {
-      "name": "DST Systems",
+      "name": "DST Systems (Formerly WMSI and S&P)",
       "position": "Enterprise Solutions Architect & Product Manager - Cloud, MicroServices, Integration and UX",
       "startDate": "2016-01-31",
       "endDate": "2016-12-31",
-      "highlights": [],
+      "highlights": [
+        "Stood up a set of product engineering teams from scratch while defining the processes, methodologies, and tools to support and evolve the organization tasked with delivering disruptive technology products that solve integration, compliance, marketing, and education problems for our financial clients.",
+        "Ideated, architected, and launched a cloud-based services enablement platform that enabled teams to design, manage, customize, and distribute custom applications to partners and clients.",
+        "Established an “Intelligent Automation Framework” combining a set of processes and tools which enabled product teams to accelerate time to market with opportunities for continuous improvement and product iteration.",
+        "Defined the standards for UI accessibility across browser/device and product line while supporting the teams responsible for the rebuild and testing efforts.",
+        "Mobilized a global network of technical teams and business partners to architect, develop, test, deliver a first-of-its-kind investing solution to the Southeast Asia market.",
+        "Developed our Interactive Site Solutions (ISS) product made for third party distributors and resellers, enabling the creation of personalized interactive education centers into web sites and mobile applications.",
+        "Created Newsletter OnDemand (NOD), a one-of-a-kind marketing and communications tool for Financial Advisors and Institutional Marketers that produced and distributed communications to any medium from a simple intuitive interface.",
+        "Led the design and development of Investment Data Profiles Suite (IDP), a combination of solutions that included big data store derived from real time financial data, rules engine, developer integration portal and a simple HTML/JS templating system, enabling customizable compliance materials & profiles."
+      ],
       "summary": "Design and develop financial literacy and education software and programs utilizing best in breed technology, adult learning theory and gamification.",
       "url": "https://www.linkedin.com/company/dst-systems/",
-      "location": "Greater Boston Area"
+      "location": "Boston, MA"
     },
     {
-      "name": "Wealth Management Systems, Inc (WMSI)",
+      "name": "DST Systems (Formerly WMSI and S&P)",
       "position": "Vice President Application Development",
       "startDate": "2013-10-31",
       "endDate": "2016-01-31",
       "highlights": [],
       "summary": "Developed and managed an innovative technology product and consulting team that solved a variety of problems (integration, compliance, marketing and education) across the financial services industry.",
-      "url": ""
+      "url": "",
+      "location": "Boston, MA"
     },
     {
-      "name": "S&P Capital IQ Financial Communications",
+      "name": "DST Systems (Formerly WMSI and S&P)",
       "position": "Director of Technology",
       "startDate": "2007-10-31",
       "endDate": "2013-10-31",
       "highlights": [],
       "summary": "Led the design, development and deployment of a new suite of product lines – over fifteen syndicated and sixty plus custom solutions – for customers like Singapore Stock Exchange, UBS, Bank of America/Merrill Lynch, and TD Ameritrade",
-      "url": ""
+      "url": "",
+      "location": "Boston, MA"
     },
     {
-      "name": "Experience",
+      "name": "Experience, Inc",
       "position": "Senior Manager, Software Development",
       "startDate": "1999-09-30",
       "endDate": "2007-11-30",
-      "highlights": [],
+      "highlights": [
+        "Second engineer onboarded to build out the technology organization and scalable solutions in collaboration with Executive Leadership, Product Management, QA, and Operations teams.",
+        "Lead the data integration projects for partners such as HotJobs, CareerBuilder, and Dice from determining priorities, defining timelines, and allocating resources across all phases of the project lifecycle.",
+        "Developed the integration patterns and technologies our partners used for all content and job integrations.",
+        "Introduced cutting edge open-source solutions around security, search, document conversion/management, web analytics, and ad targeting.",
+        "Designed, architected and built a pluggable search and query service that allowed partners, customers and developers to quickly integrate disparate data sources like Oracle, SQL Server, Altavista and even mainframe systems."
+      ],
       "summary": "Brought in during the early stages of VC funded start-up to build a design and engineering team for the development of a set of sites and suite of tools to help college students and recent graduates get their first jobs as well as career centers place candidates with their partners.",
-      "url": ""
-    },
-    {
-      "name": "Database Technologies",
-      "position": "Staff Consultant",
-      "startDate": "1999-02-28",
-      "endDate": "1999-09-30",
-      "highlights": [],
-      "summary": "Wrote code, chewed bubble gum and...",
-      "url": "https://www.linkedin.com/company/database-technologies/"
-    },
-    {
-      "name": "National Leisure Group",
-      "position": "Lead Designer & Engineer",
-      "startDate": "1997-03-31",
-      "endDate": "1999-02-28",
-      "highlights": [],
-      "summary": "Designed, developed and managed the first ever online travel sites with \"real-ish\" time pricing that was cobranded for partners like MasterCard, BJ's Wholesale Club, and more.  The technology and design became the base for the first expedia.com",
-      "url": ""
+      "url": "",
+      "location": "Boston, MA"
     }
   ],
   "volunteer": [],
@@ -135,67 +143,52 @@
   "skills": [
     {
       "name": "Product Engineering",
-      "level": "60",
+      "level": "70",
       "keywords": []
     },
     {
-      "name": "Operating Model Change",
-      "level": "55",
+      "name": "Cloud Migration & Modernization",
+      "level": "68",
       "keywords": []
     },
     {
       "name": "Digital Strategy & Transformation",
-      "level": "60",
+      "level": "66",
       "keywords": []
     },
     {
       "name": "SAFe, LeSS & DAD Agile Frameworks",
-      "level": "50",
+      "level": "64",
       "keywords": []
     },
     {
-      "name": "Enterprise Lean/XP",
-      "level": "45",
+      "name": "Lean Startup/XP",
+      "level": "64",
       "keywords": []
     },
     {
-      "name": "Design Thinking",
-      "level": "45",
+      "name": "Continuous Improvement",
+      "level": "63",
       "keywords": []
     },
     {
       "name": "Adult Learning Theory",
-      "level": "35",
+      "level": "62",
       "keywords": []
     },
     {
-      "name": "Secure Engineering",
-      "level": "50",
-      "keywords": []
-    },
-    {
-      "name": "Cloud Native Architecture & Patterns",
+      "name": "Security Engineering",
       "level": "60",
       "keywords": []
     },
     {
-      "name": "Test Driven Development (TDD)",
-      "level": "35",
+      "name": "Cloud Native Architecture & Patterns",
+      "level": "58",
       "keywords": []
     },
     {
-      "name": "Acceptance Test Driven Development (ATDD)",
-      "level": "30",
-      "keywords": []
-    },
-    {
-      "name": "Behavior-Driven Development (BDD)",
-      "level": "50",
-      "keywords": []
-    },
-    {
-      "name": "DevSecOps",
-      "level": "54",
+      "name": "Event Driven Architectures",
+      "level": "56",
       "keywords": []
     },
     {
@@ -204,103 +197,118 @@
       "keywords": []
     },
     {
-      "name": "Event Driven Architectures",
-      "level": "60",
+      "name": "Test/Behavior Driven Development",
+      "level": "54",
       "keywords": []
     },
     {
       "name": "API Architecture/Design/Management",
-      "level": "40",
+      "level": "52",
       "keywords": []
     },
     {
-      "name": "Coaching",
-      "level": "55",
-      "keywords": []
-    },
-    {
-      "name": "Amazon Web Services (AWS)",
-      "level": "46",
-      "keywords": []
-    },
-    {
-      "name": "Modern Engineering Excellence",
+      "name": "AWS, Azure, GCE, & Alibaba Cloud",
       "level": "50",
       "keywords": []
     },
     {
-      "name": "Web 3.0",
+      "name": "Kubernetes (various flavors)",
+      "level": "49",
+      "keywords": []
+    },
+    {
+      "name": "Service Mesh",
+      "level": "48",
+      "keywords": []
+    },
+    {
+      "name": "Scaled Delivery",
+      "level": "49",
+      "keywords": []
+    },
+    {
+      "name": "Coaching & Mentoring",
+      "level": "48",
+      "keywords": []
+    },    
+    {
+      "name": "Service Introduction & Enablement",
+      "level": "46",
+      "keywords": []
+    },
+    {
+      "name": "Team Building",
+      "level": "44",
+      "keywords": []
+    },
+    {
+      "name": "DevSecOps Engineering",
       "level": "42",
       "keywords": []
     },
     {
-      "name": "Large-scale/Modern Delivery",
-      "level": "45",
-      "keywords": []
-    },
-    {
-      "name": "Microservices",
+      "name": "Open Source Engineering",
       "level": "41",
       "keywords": []
     },
     {
-      "name": "Microsoft Azure",
-      "level": "46",
-      "keywords": []
-    },
-    {
-      "name": "Lean Startup",
-      "level": "39",
-      "keywords": []
-    },
-    {
-      "name": "Event Storming",
-      "level": "45",
-      "keywords": []
-    },
-    {
-      "name": "Serverless",
-      "level": "45",
-      "keywords": []
-    },
-    {
-      "name": "NoSQL Databases",
-      "level": "57",
-      "keywords": []
-    },
-    {
-      "name": "Java",
+      "name": "IoT",
       "level": "40",
       "keywords": []
     },
     {
+      "name": "Event Storming",
+      "level": "39",
+      "keywords": []
+    },
+    {
+      "name": "Microservices",
+      "level": "39",
+      "keywords": []
+    },
+    {
+      "name": "Web 3.0",
+      "level": "38",
+      "keywords": []
+    },
+    {
+      "name": "Serverless",
+      "level": "38",
+      "keywords": []
+    },    
+    {
+      "name": "Kafka",
+      "level": "36",
+      "keywords": []
+    },    
+    {
+      "name": "Aurea Messenger",
+      "level": "36",
+      "keywords": []
+    },
+    {
+      "name": "NoSQL Databases",
+      "level": "36",
+      "keywords": []
+    },
+    {
+      "name": "Java",
+      "level": "36",
+      "keywords": []
+    },
+    {
       "name": "Scala",
-      "level": "45",
+      "level": "38",
       "keywords": []
     },
     {
       "name": "Kotlin",
-      "level": "37",
+      "level": "39",
       "keywords": []
-    },
-    {
-      "name": "Continuous Process Improvement",
-      "level": "57",
-      "keywords": []
-    },
-    {
-      "name": "Kubernetes",
-      "level": "47",
-      "keywords": []
-    },
-    {
-      "name": "Google Cloud Platform (GCP)",
-      "level": "46",
-      "keywords": []
-    },
+    },    
     {
       "name": "Angular",
-      "level": "35",
+      "level": "37",
       "keywords": []
     },
     {
@@ -324,21 +332,6 @@
       "keywords": []
     },    
     {
-      "name": "Service Introduction & Enablement",
-      "level": "62",
-      "keywords": []
-    },
-    {
-      "name": "Team Building",
-      "level": "54",
-      "keywords": []
-    },
-    {
-      "name": "Vender & Third-Party Integration",
-      "level": "43",
-      "keywords": []
-    },
-    {
       "name": "SAP",
       "level": "25",
       "keywords": []
@@ -349,38 +342,13 @@
       "keywords": []
     },
     {
-      "name": "Open Source Engineering",
-      "level": "48",
-      "keywords": []
-    },
-    {
       "name": "Python",
       "level": "37",
       "keywords": []
     },
     {
-      "name": "Extreme Programming",
-      "level": "52",
-      "keywords": []
-    },
-    {
-      "name": "Go (Programming Language)",
+      "name": "GoLang/Go",
       "level": "34",
-      "keywords": []
-    },
-    {
-      "name": "Start-ups",
-      "level": "45",
-      "keywords": []
-    },
-    {
-      "name": "Entrepreneurship",
-      "level": "67",
-      "keywords": []
-    },
-    {
-      "name": "User Experience",
-      "level": "53",
       "keywords": []
     }
   ],

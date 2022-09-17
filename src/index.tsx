@@ -4,66 +4,39 @@ import ReactDOM from 'react-dom'
 
 import SiteConfig from "./Components/SiteConfig";
 
-import { ThemeProvider } from '@mui/system';
-import SiteTheme from './Components/SiteTheme';
-
-import {Helmet} from "react-helmet";
-
-import Header from './Components/Header';
+import App from './Components/App';
 import Home from './Components/Home';
-import Footer from './Components/Footer';
-import Copyright from './Components/Copyright';
 import Resume from './Components/Resume'
+import PDFResume from './Components/Printable/PDFResume';
+import Portfolio from './Components/Portfolio';
+import Skills from './Components/Skills';
 
-import reportWebVitals from './reportWebVitals';
 import { SimpleResume } from './Objects/SimpleResume';
-import { CssBaseline } from '@mui/material';
 
 import { fas } from '@fortawesome/free-solid-svg-icons';
 import { fab } from '@fortawesome/free-brands-svg-icons'
 import { IconPack, library } from '@fortawesome/fontawesome-svg-core';
-
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import Portfolio from './Components/Portfolio';
-import Skills from './Components/Skills';
 
 library.add(fab as IconPack);
 library.add(fas as IconPack);
 
+const resume : SimpleResume = SiteConfig();
 
-const simpleResume : SimpleResume = SiteConfig();
- 
 ReactDOM.render(
     <>
 
-      <CssBaseline />
-
-      <ThemeProvider theme={SiteTheme}>
-
-        <Helmet>
-          <title>{simpleResume.siteTitle}</title>
-          <meta name="description" content={simpleResume.siteDescription} />
-        </Helmet>
-
-        <Header {...simpleResume} />
-
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home {...simpleResume} />} />
-            <Route path="/resume" element={<Resume {...simpleResume} />} />
-            <Route path="/portfolio" element={<Portfolio {...simpleResume} />} />
-            <Route path="/skills" element={<Skills {...simpleResume} />} />
+            <Route path="/" element={<App simpleResume={resume}><Home {...resume} /></App>} />
+            <Route path="/resume" element={<App simpleResume={resume}><Resume {...resume} /></App>} />
+            <Route path="/portfolio" element={<App simpleResume={resume}><Portfolio {...resume} /></App>} />
+            <Route path="/skills"element={<App simpleResume={resume}><Skills {...resume} /></App>} />
+            <Route path="/print" element={<PDFResume {...resume} />} />
           </Routes>
         </BrowserRouter>
 
-        <Footer {...simpleResume} />
-
-        <Copyright {...simpleResume} />
-
-      </ThemeProvider>
 
     </>,
     document.getElementById("root")
 );
-
-reportWebVitals();

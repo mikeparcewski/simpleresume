@@ -13,7 +13,7 @@ export interface SectionData {
   header: string;
 }
  
-const AboutSection = (data: SectionData) => {
+const HomeSection = (data: SectionData) => {
 
     return (
       <>
@@ -60,4 +60,4 @@ const AboutSection = (data: SectionData) => {
     )
 }
 
-export default AboutSection;
+export default HomeSection;

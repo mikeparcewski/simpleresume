@@ -62,6 +62,7 @@ export interface Basics {
     label:    string;
     picture:  string;
     email:    string;
+    url:      string;
     phone:    string;
     degree:   string;
     website:  string;
@@ -120,7 +121,7 @@ export interface Publication {
 
 export interface Skill {
     name:     string;
-    level:    string;
+    level:    number;
     keywords: string[];
 }
 
