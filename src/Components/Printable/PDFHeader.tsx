@@ -76,7 +76,7 @@ const PDFHeader = (site: SimpleResume) => {
                 justifyContent: "right"
             }}>
 
-              { resume.basics.profiles?.filter((profile: Profile, index: number) => {
+              { resume.basics.profiles.filter((profile: Profile, index: number) => {
                   return profile.url.startsWith("http")
                 }).map((profile, index) => (
 

@@ -13,7 +13,7 @@ const SiteMasthead = (props: SimpleResume) => {
   titles.slice(1).map((title : string, index : number) => (
     embedded += "   <" + title.replaceAll(" ", "_") + " />\n"
   ));
-  embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
+  if (titles) embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
 
   const codeStyle : Object = {
     fontSize: "1.3vmax"

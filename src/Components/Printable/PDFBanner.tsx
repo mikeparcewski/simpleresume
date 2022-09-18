@@ -23,7 +23,7 @@ const PDFHeader = (site: SimpleResume) => {
             display: "flex"
           }}>
 
-            { resume.basics.titles?.map((title: string, index: number) => (
+            { resume.basics.titles.map((title: string, index: number) => (
 
               <Typography
                 key={ "titles" + index }
