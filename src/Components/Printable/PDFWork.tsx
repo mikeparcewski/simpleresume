@@ -23,6 +23,8 @@ const PDFWork = (resume: Resume) => {
         sx={{
           borderBottom: 1,
           fontSize: "1.3vmax",
+          color: "primary.contrastText",
+          fontWeight: "700"
       }}>
         PROFESSIONAL EXPERIENCE
       </Box>

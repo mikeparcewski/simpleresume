@@ -33,7 +33,9 @@ const PDFHighlight = (data: SectionData) => {
               sx={{
                 borderBottom: 1,
                 fontSize: "1.3vmax",
-                mb: 1
+                mb: 1,
+                color: "primary.contrastText",
+                fontWeight: "700"
             }}>
               {data.header.toUpperCase()}
             </Box>

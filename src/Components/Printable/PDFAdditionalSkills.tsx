@@ -15,7 +15,9 @@ const PDFAdditionalSkills = (param: PDFSkillsParam) => {
         sx={{
           borderBottom: 1,
           fontSize: "1.3vmax",
-          mb: 1
+          mb: 1,
+          color: "primary.contrastText",
+          fontWeight: "700"
       }}>
         ADDITIONAL TOOLS, TECHNOLOGIES, & METHODOLOGIES
       </Box>

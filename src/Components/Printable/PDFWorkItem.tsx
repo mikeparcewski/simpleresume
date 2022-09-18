@@ -27,8 +27,9 @@ const PDFWorkItem: React.FC<{roles: Work[]}> = ({roles}) => {
 
         <Typography 
           sx={{
+            fontSize: "1.1vmax",
+            fontFamily: "Montserrat",
             fontWeight: "700",
-            fontSize: "1.1vmax"
         }}>
           {roles[0].name} | {roles[0].location} 
         </Typography>
@@ -46,20 +47,15 @@ const PDFWorkItem: React.FC<{roles: Work[]}> = ({roles}) => {
 
             <Box 
               sx={{ 
-                width: "80%" 
+                width: "80%",
             }}>
               {role.position}
             </Box>
             <Box 
               sx={{ 
                 width: "20%",
-                display: "flex-end",
-                alignContent: "right",
-                justifyContent: "right",
-                justifyItems: "right",
-                alignItems: "right"
             }}>
-              { dateFormat(role.startDate) } to { dateFormat(role.endDate) }
+              <em>{ dateFormat(role.startDate) } to { dateFormat(role.endDate) }</em>
             </Box>
 
           </Box>
