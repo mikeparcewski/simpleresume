@@ -9,7 +9,7 @@ import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 const SiteMasthead = (props: SimpleResume) => {
 
   const titles : string[] =  props.resume?.basics?.titles!;
-  let embedded = "<" + titles[0].replaceAll(" ", "_") + ">\n";
+  let embedded = "<" + (titles && titles[0].replaceAll(" ", "_")) + ">\n";
   titles.slice(1).forEach((title : string, index : number) => (
     embedded += "   <" + title.replaceAll(" ", "_") + " />\n"
   ));
