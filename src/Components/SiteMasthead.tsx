@@ -10,7 +10,7 @@ const SiteMasthead = (props: SimpleResume) => {
 
   const titles : string[] =  props.resume?.basics?.titles!;
   let embedded = "<" + titles[0].replaceAll(" ", "_") + ">\n";
-  titles.slice(1).map((title : string, index : number) => (
+  titles.slice(1).forEach((title : string, index : number) => (
     embedded += "   <" + title.replaceAll(" ", "_") + " />\n"
   ));
   if (titles) embedded += "</" + titles[0].replaceAll(" ", "_") + ">";

@@ -9,7 +9,8 @@ export interface PDFSkillsParam {
 
 const PDFSkills = (param: PDFSkillsParam) => {
 
-  var skills = param.resume.skills.sort((a, b) => b.level - a.level);
+  const skills = param.resume.skills;
+  skills.sort((a, b) => b.level - a.level);
 
   return (
 
