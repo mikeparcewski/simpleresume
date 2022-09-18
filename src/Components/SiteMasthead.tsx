@@ -8,13 +8,13 @@ import { vs2015 } from 'react-syntax-highlighter/dist/esm/styles/hljs';
 
 const SiteMasthead = (props: SimpleResume) => {
 
-  const titles : string[] =  props.resume?.basics?.titles;
+  let titles : string[] =  props.resume?.basics?.titles!;
   if (titles === undefined) titles = [];
   let embedded = "<" + titles[0].replaceAll(" ", "_") + ">\n";
   titles.slice(1).forEach((title : string, index : number) => (
     embedded += "   <" + title.replaceAll(" ", "_") + " />\n"
   ));
-  if (titles) embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
+  embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
 
   const codeStyle : Object = {
     fontSize: "1.3vmax"
