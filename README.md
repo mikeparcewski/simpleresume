@@ -75,9 +75,17 @@ Almost there, next up create your own favicons, easiest way...
 
 ### Resume/Site Copy Overrides & Additions
 
-1. Open up [src/Customize/configs/ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json)
+The goal of the [ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json) file is to both extend the file we generated 
+from LinkedIn with additional sections (e.g. non-standard JSON Resume parts like resume.careerHighlights) and to override or add 
+additional sections to what exists in LinkiedIn.
 
-TODO - Document
+1. Open up [src/Customize/configs/ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json)
+2. TODO - FINISH DOCUMENTING
+
+> Why extend JSON Resume?  
+> If you look the [print version](https://wickedagile.com/print) or [homepage](https://wickedagile.com/)
+> you'll see things like career summary, highlights and more.  Although the JSON Resume spec contains factual 
+> data, it really doesn't contain extras many recruiters (and hiring managers) look for.
 
 ### The Site Theme
 
