@@ -1,109 +1,99 @@
-import React from 'react';
-import { Box, ThemeProvider, CssBaseline } from '@mui/material';
-import { Resume, SimpleResume } from '../../Objects/SimpleResume';
-import PrintTheme from '../PrintTheme';
-import PDFHeader from './PDFHeader';
-import PDFBanner from './PDFBanner';
-import PDFHighlight, { SectionData } from './PDFHighlight';
-import PDFSkills, { PDFSkillsParam } from './PDFSkills';
-import PDFWork from './PDFWork';
-import { Helmet } from 'react-helmet';
-import PDFAdditionalSkills from './PDFAdditionalSkills';
- 
+import React from "react";
+import { Box, ThemeProvider, CssBaseline } from "@mui/material";
+import { Resume, SimpleResume } from "../../Objects/SimpleResume";
+import PrintTheme from "../PrintTheme";
+import PDFHeader from "./PDFHeader";
+import PDFBanner from "./PDFBanner";
+import PDFHighlight, { SectionData } from "./PDFHighlight";
+import PDFSkills, { PDFSkillsParam } from "./PDFSkills";
+import PDFWork from "./PDFWork";
+import { Helmet } from "react-helmet";
+import PDFAdditionalSkills from "./PDFAdditionalSkills";
+
 const PDFResume = (site: SimpleResume) => {
+  const resume: Resume = site.resume!;
 
-    const resume: Resume = site.resume!;
+  const maxHiglightSkills: number = 18;
 
-    const maxHiglightSkills: number = 18;
+  const summary: SectionData = {
+    highlights: resume?.basics.careerSummary!,
+    compId: "summary",
+    iconPrefix: "fa-solid",
+    iconName: "fa-angles-right",
+    header: "Career Summary",
+  };
 
-    const summary: SectionData = {
-      highlights: resume?.basics.careerSummary!,
-      compId: "summary",
-      iconPrefix: "fa-solid",
-      iconName: "fa-angles-right",
-      header: "Career Summary"
-    }
-  
-    const highlights: SectionData = {
-      highlights: resume?.basics.highlights!,
-      compId: "highlights",
-      separator: "|",
-      header: "HIGHLIGHTED ACCOMPLISHMENTS, SKILLS AND EXPERIENCE"
-    }
+  const highlights: SectionData = {
+    highlights: resume?.basics.highlights!,
+    compId: "highlights",
+    separator: "|",
+    header: "HIGHLIGHTED ACCOMPLISHMENTS, SKILLS AND EXPERIENCE",
+  };
 
-    const skills: PDFSkillsParam = {
-      resume: resume,
-      numberOfSkills: maxHiglightSkills
-    }  
+  const skills: PDFSkillsParam = {
+    resume: resume,
+    numberOfSkills: maxHiglightSkills,
+  };
 
-    const interesting: SectionData = {
-      highlights: resume?.basics.interestingFacts!,
-      compId: "interesting",
-      header: "OTHER INTERESTING FACTS",
-      iconPrefix: "fa-solid",
-      iconName: "fa-angles-right",
-    }
+  const interesting: SectionData = {
+    highlights: resume?.basics.interestingFacts!,
+    compId: "interesting",
+    header: "OTHER INTERESTING FACTS",
+    iconPrefix: "fa-solid",
+    iconName: "fa-angles-right",
+  };
 
-    // printing
-    let body = document.querySelector('body');
-    body?.style.setProperty('-webkit-print-color-adjust', 'exact');
-    body?.style.setProperty('-moz-print-color-adjust', 'exact');
-    body?.style.setProperty('-ms-print-color-adjust', 'exact');
-    body?.style.setProperty('print-color-adjust', 'exact');
+  // printing
+  let body = document.querySelector("body");
+  body?.style.setProperty("-webkit-print-color-adjust", "exact");
+  body?.style.setProperty("-moz-print-color-adjust", "exact");
+  body?.style.setProperty("-ms-print-color-adjust", "exact");
+  body?.style.setProperty("print-color-adjust", "exact");
 
-    return (
+  return (
+    <>
+      <Helmet>
+        <title>{site.resume?.basics.name.replace(" ", "_")}_resume</title>
+        <meta name="description" content={site.resume?.basics.name.replace(" ", "_") + "_resume"} />
+      </Helmet>
 
-      <>
+      <CssBaseline />
 
-        <Helmet>
-          <title>{site.resume?.basics.name.replace(" ", "_")}_resume</title>
-          <meta name="description" content={site.resume?.basics.name.replace(" ", "_") + "_resume"} />
-
-        </Helmet>
-
-        <CssBaseline />
-
-        <ThemeProvider theme={PrintTheme}>
-
+      <ThemeProvider theme={PrintTheme}>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            mt: 1,
+            width: "100%",
+            alignItems: "center",
+          }}
+        >
           <Box
             sx={{
-              display: "flex",
-              flexDirection: "column",
-              mt: 1,
-              width: "100%",
-              alignItems: "center"
-          }}>
+              width: "19.7cm",
+              alignItems: "left",
+            }}
+          >
+            <PDFHeader {...site} />
 
-            <Box
-              sx={{
-                width: "19.7cm",
-                alignItems: "left"
-            }}>
+            <PDFBanner {...site} />
 
-              <PDFHeader {...site} />
+            <PDFHighlight {...summary} />
 
-              <PDFBanner {...site} />
+            <PDFHighlight {...highlights} />
 
-              <PDFHighlight {...summary} />
+            <PDFSkills {...skills} />
 
-              <PDFHighlight {...highlights} />
+            <PDFWork {...site.resume!} />
 
-              <PDFSkills {...skills} />
+            <PDFAdditionalSkills {...skills} />
 
-              <PDFWork {...site.resume!}/>
-
-              <PDFAdditionalSkills {...skills} />
-
-              <PDFHighlight {...interesting} />
-
-            </Box>
-
+            <PDFHighlight {...interesting} />
           </Box>
-
-        </ThemeProvider>
-
-      </>
-
-    )
-}
+        </Box>
+      </ThemeProvider>
+    </>
+  );
+};
 export default PDFResume;

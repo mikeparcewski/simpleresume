@@ -4,17 +4,17 @@
 
 Developed as a way to (un)learn my react skills and see if I could actually right some front end code that I could use for my resume (not looking for a job - wink wink) and maybe give some other folks some fun with react.
 
-Based on JSON Resume and some addition customization options, you can have your own cool react resume without writing a line of code.  Just customizing (or generating) some JSON.
+Based on JSON Resume and some addition customization options, you can have your own cool react resume without writing a line of code. Just customizing (or generating) some JSON.
 
 Sample [wickedagile.com](https://wickedagile.com)
 
 ## Technologies/Libraries/Frameworks
 
--   [React](https://reactjs.org/)
--   [Typescript](https://www.typescriptlang.org/)
--   [mui](https://mui.com/)
--   [JSON Resume](https://jsonresume.org/)
--   [FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
+- [React](https://reactjs.org/)
+- [Typescript](https://www.typescriptlang.org/)
+- [mui](https://mui.com/)
+- [JSON Resume](https://jsonresume.org/)
+- [FontAwesome](https://fontawesome.com/v5/docs/web/use-with/react)
 
 ## Running
 
@@ -26,7 +26,7 @@ All the customization files are in the [Customize](Cusrtomize/) directory.
 
 ### Your Resume
 
-Let's start with your resume.  I was lazy and did the "Import from LinkedIn" Chrome add on.  What should be obvious in what I just said - you need Chrome.
+Let's start with your resume. I was lazy and did the "Import from LinkedIn" Chrome add on. What should be obvious in what I just said - you need Chrome.
 
 1.  Go to <https://chrome.google.com/webstore/detail/json-resume-exporter/caobgmmcpklomkcckaenhjlokpmfbdec>
 2.  Click "Add to Chrome"
@@ -42,31 +42,31 @@ Let's start with your resume.  I was lazy and did the "Import from LinkedIn" Chr
 
 Now if you don't hava an Avatar, let's make one (if you do, skip to the next step)
 
--   Go to <https://avatarmaker.com/>
--   Design your Avatar
--   Download
+- Go to <https://avatarmaker.com/>
+- Design your Avatar
+- Download
 
 Save your avatar...
 
--   Name it **avatar.png**
--   Save to the [Customize/](Customize/) folder
+- Name it **avatar.png**
+- Save to the [Customize/](Customize/) folder
 
-Next up create your "old" avatar.  Because who doen't love to see their avatar get old!
+Next up create your "old" avatar. Because who doen't love to see their avatar get old!
 
--   Repeat the steps you did with your first avatar (optional)
-    -   NOTE: If you don't create an aged avatar, just copy **avatar.png** to the name below
--   Save as **avatar-old.png**
+- Repeat the steps you did with your first avatar (optional)
+  - NOTE: If you don't create an aged avatar, just copy **avatar.png** to the name below
+- Save as **avatar-old.png**
 
 Now let's make it fun and give it some motion...
 
--   Go to <https://giphy.com/> and create an account
--   Then go to <https://giphy.com/create/gifmaker>
--   Upload your avatar
--   Then start playing with the filters.  I used the "Glitch" filter for mine.
--   Upload it (you need to click a few times)
--   Right click when done on the image and download 
-    -   Name it **masthead-lead.gif**
-    -   Save it to the [Customize/](Customize/) directory
+- Go to <https://giphy.com/> and create an account
+- Then go to <https://giphy.com/create/gifmaker>
+- Upload your avatar
+- Then start playing with the filters. I used the "Glitch" filter for mine.
+- Upload it (you need to click a few times)
+- Right click when done on the image and download
+  - Name it **masthead-lead.gif**
+  - Save it to the [Customize/](Customize/) directory
 
 Almost there, next up create your own favicons, easiest way...
 
@@ -77,8 +77,8 @@ Almost there, next up create your own favicons, easiest way...
 
 ### Resume/Site Copy Overrides & Additions
 
-The goal of the [ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json) file is to both extend the file we generated 
-from LinkedIn with additional sections (e.g. non-standard JSON Resume parts like resume.careerHighlights) and to override or add 
+The goal of the [ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json) file is to both extend the file we generated
+from LinkedIn with additional sections (e.g. non-standard JSON Resume parts like resume.careerHighlights) and to override or add
 additional sections to what exists in LinkiedIn.
 
 1.  Open up [src/Customize/configs/ResumeOverrides.json](src/Customize/configs/ResumeOverrides.json)
@@ -86,7 +86,7 @@ additional sections to what exists in LinkiedIn.
 
 > **Why extend JSON Resume?**
 > If you look the [print version](https://wickedagile.com/print) or [homepage](https://wickedagile.com/)
-> you'll see things like career summary, highlights and more.  Although the JSON Resume spec contains factual 
+> you'll see things like career summary, highlights and more. Although the JSON Resume spec contains factual
 > data, it really doesn't contain extras many recruiters (and hiring managers) look for.
 
 ### The Site Theme
@@ -105,10 +105,10 @@ TODO - Document
 
 I put the legos together, but there are a lot of lego makers out there and I want to give them some credit for their code or ideas.
 
--   Inspiration
-    -   <https://startbootstrap.github.io/startbootstrap-freelancer/#page-top>
-    -   <https://github.com/devmahmud/material-ui-portfolio>
--   Layout & Design - <https://mui.com/>
--   Avatar - <https://avatarmaker.com/>
--   Animated GIF - <https://giphy.com/>
--   Theme customizer = <https://bareynol.github.io/mui-theme-creator>
+- Inspiration
+  - <https://startbootstrap.github.io/startbootstrap-freelancer/#page-top>
+  - <https://github.com/devmahmud/material-ui-portfolio>
+- Layout & Design - <https://mui.com/>
+- Avatar - <https://avatarmaker.com/>
+- Animated GIF - <https://giphy.com/>
+- Theme customizer = <https://bareynol.github.io/mui-theme-creator>

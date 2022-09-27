@@ -1,50 +1,50 @@
 {
-    "LinkedIn": {
-        "clz": "fab",
-        "name": "linkedin"
-    },
-    "GitHub": {
-        "clz": "fab",
-        "name": "github"
-    }, 
-    "Twitter": {
-        "clz": "fab",
-        "name": "twitter"
-    },  
-    "Projects": {
-        "clz": "fas",
-        "name": "brush"
-    },     
-    "Work": {
-        "clz": "fas",
-        "name": "file-invoice"
-    },
-    "Skills": {
-        "clz": "fas",
-        "name": "cubes"
-    },
-    "Open Source Library": {
-        "clz": "fab",
-        "name": "osi"
-    },
-    "Ref Implementation": {
-        "clz": "fa",
-        "name": "toolbox"
-    },
-    "Training App": {
-        "clz": "fa",
-        "name": "chalkboard-user"
-    },
-    "Handmade": {
-        "clz": "fa",
-        "name": "screwdriver-wrench"
-    },
-    "Rental": {
-        "clz": "fa",
-        "name": "house-flood-water"
-    },
-    "unknown": {
-        "clz": "fas",
-        "name": "link-slash"
-    } 
+  "LinkedIn": {
+    "clz": "fab",
+    "name": "linkedin"
+  },
+  "GitHub": {
+    "clz": "fab",
+    "name": "github"
+  },
+  "Twitter": {
+    "clz": "fab",
+    "name": "twitter"
+  },
+  "Projects": {
+    "clz": "fas",
+    "name": "brush"
+  },
+  "Work": {
+    "clz": "fas",
+    "name": "file-invoice"
+  },
+  "Skills": {
+    "clz": "fas",
+    "name": "cubes"
+  },
+  "Open Source Library": {
+    "clz": "fab",
+    "name": "osi"
+  },
+  "Ref Implementation": {
+    "clz": "fa",
+    "name": "toolbox"
+  },
+  "Training App": {
+    "clz": "fa",
+    "name": "chalkboard-user"
+  },
+  "Handmade": {
+    "clz": "fa",
+    "name": "screwdriver-wrench"
+  },
+  "Rental": {
+    "clz": "fa",
+    "name": "house-flood-water"
+  },
+  "unknown": {
+    "clz": "fas",
+    "name": "link-slash"
+  }
 }

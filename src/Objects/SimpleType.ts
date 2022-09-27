@@ -1,3 +1,3 @@
 export interface SimpleType {
-    [key: string]: JSON;
+  [key: string]: JSON;
 }

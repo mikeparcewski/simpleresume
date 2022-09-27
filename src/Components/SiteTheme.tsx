@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material/styles';
-import themeData from '../Customize/configs/Theme.json'
+import { createTheme } from "@mui/material/styles";
+import themeData from "../Customize/configs/Theme.json";
 
 // navbar theme
 let SiteTheme = createTheme(themeData);
@@ -11,6 +11,5 @@ SiteTheme = createTheme(SiteTheme, {
     },
   },
 });
-
 
 export default SiteTheme;

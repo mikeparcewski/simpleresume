@@ -1,0 +1,14 @@
+{
+  "extends": ["airbnb", "prettier", "plugin:import/errors", "plugin:import/warnings", "plugin:import/typescript"],
+  "plugins": ["prettier"],
+  "rules": {
+    "prettier/prettier": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  }
+}

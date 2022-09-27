@@ -1,32 +1,28 @@
-import React from 'react'
-import { SimpleResume } from '../Objects/SimpleResume';
+import React from "react";
+import { Helmet } from "react-helmet";
 
-import { CssBaseline } from '@mui/material';
+import { SimpleResume } from "../Objects/SimpleResume";
 
-import { ThemeProvider } from '@mui/system';
-import SiteTheme from './SiteTheme';
-import {Helmet} from "react-helmet";
+import { CssBaseline } from "@mui/material";
 
-import Header from './Header';
-import Footer from './Footer';
-import Copyright from './Copyright';
+import { ThemeProvider } from "@mui/system";
+import SiteTheme from "./SiteTheme";
 
-import reportWebVitals from '../reportWebVitals';
+import Header from "./Header";
+import Footer from "./Footer";
+import Copyright from "./Copyright";
 
+import reportWebVitals from "../reportWebVitals";
 
-const App: React.FC<{simpleResume: SimpleResume}> = ({children, simpleResume}) => {
+const App: React.FC<{ simpleResume: SimpleResume }> = ({ children, simpleResume }) => {
+  return (
+    <>
+      <CssBaseline />
 
-
-    return (
-      <>
-
-        <CssBaseline />
-
-        <ThemeProvider theme={SiteTheme}>
-
+      <ThemeProvider theme={SiteTheme}>
         <Helmet>
-            <title>{simpleResume.siteTitle}</title>
-            <meta name="description" content={simpleResume.siteDescription} />
+          <title>{simpleResume.siteTitle}</title>
+          <meta name="description" content={simpleResume.siteDescription} />
         </Helmet>
 
         <Header {...simpleResume} />
@@ -36,14 +32,10 @@ const App: React.FC<{simpleResume: SimpleResume}> = ({children, simpleResume}) =
         <Footer {...simpleResume} />
 
         <Copyright {...simpleResume} />
-
       </ThemeProvider>
-
- 
-      </>
-
-    )
-}
+    </>
+  );
+};
 
 export default App;
 

@@ -1,21 +1,21 @@
 {
-    "basics": {
-        "profiles": [
-            { 
-                "network": "Work", 
-                "title": "Work_History",
-                "url": "resume" 
-            },
-            { 
-                "network": "Skills", 
-                "title": "Skills_And_More",
-                "url": "skills" 
-            },
-            { 
-                "network": "Projects", 
-                "title": "Select_Projects",
-                "url": "portfolio" 
-            }
-        ]
-    }
+  "basics": {
+    "profiles": [
+      {
+        "network": "Work",
+        "title": "Work_History",
+        "url": "resume"
+      },
+      {
+        "network": "Skills",
+        "title": "Skills_And_More",
+        "url": "skills"
+      },
+      {
+        "network": "Projects",
+        "title": "Select_Projects",
+        "url": "portfolio"
+      }
+    ]
+  }
 }

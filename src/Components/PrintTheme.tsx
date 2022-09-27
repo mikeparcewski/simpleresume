@@ -1,5 +1,5 @@
-import { createTheme } from '@mui/material/styles';
-import themeData from '../Customize/configs/PrintTheme.json'
+import { createTheme } from "@mui/material/styles";
+import themeData from "../Customize/configs/PrintTheme.json";
 
 // navbar theme
 let PrintTheme = createTheme(themeData);
@@ -11,6 +11,5 @@ PrintTheme = createTheme(PrintTheme, {
     },
   },
 });
-
 
 export default PrintTheme;
