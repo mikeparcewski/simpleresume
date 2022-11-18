@@ -15,6 +15,11 @@
         "network": "Projects",
         "title": "Select_Projects",
         "url": "portfolio"
+      },
+      {
+        "network": "Print",
+        "title": "Print_Resume",
+        "url": "print"
       }
     ]
   }

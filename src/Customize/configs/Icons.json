@@ -23,6 +23,10 @@
     "clz": "fas",
     "name": "cubes"
   },
+  "Print": {
+    "clz": "fas",
+    "name": "print"
+  },
   "Open Source Library": {
     "clz": "fab",
     "name": "osi"

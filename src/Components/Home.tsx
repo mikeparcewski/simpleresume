@@ -6,20 +6,20 @@ import { Box } from "@mui/material";
 
 const Home = (props: SimpleResume) => {
   const summary: SectionData = {
-    highlights: props?.resume?.basics.careerSummary!,
+    highlights: props?.resume?.basics.careerSummary === undefined ? [] : props.resume.basics.careerSummary,
     compId: "summary",
     iconPrefix: "fa-solid",
     iconName: "fa-square-check",
-    header: "Career Summary",
+    header: "Career Summary"
   };
 
   const highlights: SectionData = {
-    highlights: props?.resume?.basics.highlights!,
+    highlights: props?.resume?.basics.highlights === undefined ? [] : props.resume.basics.highlights,
     compId: "highlights",
     separator: "|",
     iconPrefix: "fa-solid",
     iconName: "fa-forward",
-    header: "Selected Accomplishments",
+    header: "Selected Accomplishments"
   };
 
   return (
@@ -32,7 +32,7 @@ const Home = (props: SimpleResume) => {
         sx={{
           mt: "3vmax",
           mb: "4vmax",
-          alignItems: "center",
+          alignItems: "center"
         }}
       >
         <Box
@@ -41,7 +41,7 @@ const Home = (props: SimpleResume) => {
             alignItems: "left",
             justifyContent: "left",
             width: "100%",
-            maxWidth: { xs: "95%", md: "70%" },
+            maxWidth: { xs: "95%", md: "70%" }
           }}
         >
           <HomeSection {...summary} />

@@ -30,20 +30,20 @@ type InputProps = {
 const drawerWidth = "25vmax";
 
 const AppBar = styled(MuiAppBar, {
-  shouldForwardProp: (prop) => prop !== "open",
+  shouldForwardProp: (prop) => prop !== "open"
 })<InputProps>(({ theme, open }) => ({
   transition: theme.transitions.create(["margin", "width"], {
     easing: theme.transitions.easing.sharp,
-    duration: theme.transitions.duration.leavingScreen,
+    duration: theme.transitions.duration.leavingScreen
   }),
   ...(open && {
     width: `calc(100% - ${drawerWidth})`,
     transition: theme.transitions.create(["margin", "width"], {
       easing: theme.transitions.easing.easeOut,
-      duration: theme.transitions.duration.enteringScreen,
+      duration: theme.transitions.duration.enteringScreen
     }),
-    marginRight: drawerWidth,
-  }),
+    marginRight: drawerWidth
+  })
 }));
 
 const DrawerHeader = styled("div")(({ theme }) => ({
@@ -52,7 +52,7 @@ const DrawerHeader = styled("div")(({ theme }) => ({
   padding: theme.spacing(0, 1),
   // necessary for content to be below app bar
   ...theme.mixins.toolbar,
-  justifyContent: "flex-start",
+  justifyContent: "flex-start"
 }));
 
 export default function Header(config: SimpleResume) {
@@ -63,8 +63,8 @@ export default function Header(config: SimpleResume) {
   const homePages: string[] = ["/", ""];
   const isHomepage = homePages.some((x) => x.includes(path));
 
-  let avatars: typeof require[] = [require("../Customize/avatar.png"), require("../Customize/avatar-old.png")];
-  let myAvatar = avatars[Math.round(Math.random())];
+  const avatars: typeof require[] = [require("../Customize/avatar.png"), require("../Customize/avatar-old.png")];
+  const myAvatar = avatars[Math.round(Math.random())];
 
   const handleDrawerOpen = () => {
     setOpen(true);
@@ -85,7 +85,7 @@ export default function Header(config: SimpleResume) {
                 display: isHomepage ? "none" : { xs: "none", md: "flex" },
                 alignItems: "center",
                 justifyContent: "center",
-                paddingRight: ".3vmax",
+                paddingRight: ".3vmax"
               }}
             >
               <ReactRoundedImage image={myAvatar} alt={config.siteTitle} roundedSize="13" imageWidth="50" imageHeight="50"></ReactRoundedImage>
@@ -95,7 +95,7 @@ export default function Header(config: SimpleResume) {
               style={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: "center"
               }}
             >
               <Button
@@ -105,7 +105,7 @@ export default function Header(config: SimpleResume) {
                   fontSize: "2.3vmax",
                   fontWeight: "700",
                   color: "primary.contrastText",
-                  textTransform: "uppercase",
+                  textTransform: "uppercase"
                 }}
               >
                 {config.resume?.basics.name}
@@ -117,6 +117,7 @@ export default function Header(config: SimpleResume) {
             <Button
               key={profile.network}
               href={profile.url}
+              target={Config.isBrand(config, profile) || profile.url === "print" ? "blank" : ""}
               variant="text"
               sx={{
                 mx: Config.isBrand(config, profile) ? 0 : 1,
@@ -124,14 +125,14 @@ export default function Header(config: SimpleResume) {
                 color: "primary.contrastText",
                 fontSize: "1.3vmax",
                 fontWeight: "800",
-                display: { xs: "none", md: "inline" },
+                display: { xs: "none", md: "inline" }
               }}
             >
-              {Config.isBrand(config, profile) ? (
+              {Config.isBrand(config, profile) || profile.url === "print" ? (
                 <FontAwesomeIcon
                   icon={[
                     config && config.getIconPrefix ? config.getIconPrefix(profile.network) : (Config.DEF_ICONDETAIL?.clz as IconPrefix),
-                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName),
+                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName)
                   ]}
                 />
               ) : (
@@ -155,8 +156,8 @@ export default function Header(config: SimpleResume) {
           width: drawerWidth,
           flexShrink: 0,
           "& .MuiDrawer-paper": {
-            width: drawerWidth,
-          },
+            width: drawerWidth
+          }
         }}
         variant="persistent"
         anchor="right"
@@ -179,7 +180,7 @@ export default function Header(config: SimpleResume) {
                 <FontAwesomeIcon
                   icon={[
                     config && config.getIconPrefix ? config.getIconPrefix(profile.network) : (Config.DEF_ICONDETAIL?.clz as IconPrefix),
-                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName),
+                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName)
                   ]}
                 />
               </ListItemIcon>
@@ -193,7 +194,7 @@ export default function Header(config: SimpleResume) {
             display: isHomepage ? "none" : "flex",
             alignItems: "center",
             justifyContent: "center",
-            paddingTop: "1vmax",
+            paddingTop: "1vmax"
           }}
         >
           <ReactRoundedImage image={myAvatar} alt={config.siteTitle} roundedSize="0" imageWidth="50" imageHeight="50"></ReactRoundedImage>

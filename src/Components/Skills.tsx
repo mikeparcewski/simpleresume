@@ -5,9 +5,9 @@ import { SimpleResume, Skill } from "../Objects/SimpleResume";
 import WordCloud from "wordcloud";
 
 const Skills = (props: SimpleResume) => {
-  let headerParams: Partial<SimpleHeaderParams> = {
+  const headerParams: Partial<SimpleHeaderParams> = {
     title: props.getProfilePageTitle && props.getProfilePageTitle("Skills"),
-    conf: props,
+    conf: props
   };
 
   const [width] = React.useState(window.innerWidth * 0.78);
@@ -17,13 +17,13 @@ const Skills = (props: SimpleResume) => {
 
   useEffect(() => {
     WordCloud(canvasRef.current, {
-      list: Array.from(props.resume!.skills, (skill: Skill) => [skill.name, skill.level]),
+      list: Array.from(props.resume?.skills ?? ([] as Skill[]), (skill: Skill) => [skill.name, skill.level]),
       shape: "circle",
       color: "random-dark",
       minRotation: 0,
       maxRotation: 0,
       shrinkToFit: true,
-      minSize: 2,
+      minSize: 2
     });
   }, [props.resume]);
 
@@ -36,7 +36,7 @@ const Skills = (props: SimpleResume) => {
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          my: "2vmax",
+          my: "2vmax"
         }}
       >
         <canvas ref={canvasRef} width={width} height={height} />

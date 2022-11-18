@@ -10,9 +10,9 @@ import { IconProp } from "@fortawesome/fontawesome-svg-core";
 import { useTheme } from "@mui/system";
 
 const Resume = (props: SimpleResume) => {
-  let headerParams: Partial<SimpleHeaderParams> = {
+  const headerParams: Partial<SimpleHeaderParams> = {
     title: props.getProfilePageTitle && props.getProfilePageTitle("Work"),
-    conf: props,
+    conf: props
   };
 
   const theme = useTheme();
@@ -27,7 +27,7 @@ const Resume = (props: SimpleResume) => {
         sx={{
           mb: "4vmax",
           mx: { xs: 0, md: "5vmax" },
-          p: 0,
+          p: 0
         }}
       >
         {props.resume?.work.map((work: Work, index: number) => (
@@ -35,7 +35,7 @@ const Resume = (props: SimpleResume) => {
             <TimelineOppositeContent
               sx={{
                 m: "auto 0",
-                display: { xs: "none", md: "block" },
+                display: { xs: "none", md: "block" }
               }}
               align="right"
               variant="body2"
@@ -63,7 +63,7 @@ const Resume = (props: SimpleResume) => {
                   backgroundColor: "primary.main",
                   p: "1vmax",
                   borderRadius: 20,
-                  transform: index % 2 === 0 || !isMd ? "rotate(0deg)" : "rotate(180deg)",
+                  transform: index % 2 === 0 || !isMd ? "rotate(0deg)" : "rotate(180deg)"
                 }}
               >
                 <FontAwesomeIcon fontSize="1vmax" icon={faPlay as IconProp} />
@@ -75,7 +75,7 @@ const Resume = (props: SimpleResume) => {
             <TimelineContent sx={{ py: "12px", px: 2 }}>
               <Box
                 sx={{
-                  boxShadow: 20,
+                  boxShadow: 20
                 }}
               >
                 <Box
@@ -83,7 +83,7 @@ const Resume = (props: SimpleResume) => {
                     display: { xs: "block", md: "none" },
                     color: "secondary.contrastText",
                     p: "2vmax",
-                    backgroundColor: "secondary.main",
+                    backgroundColor: "secondary.main"
                   }}
                 >
                   <Typography variant="h6" sx={{ fontSize: "1rem", fontWeight: "700" }}>
@@ -97,7 +97,7 @@ const Resume = (props: SimpleResume) => {
 
                 <Box
                   sx={{
-                    p: { xs: "2vmax", md: "1.5vmax" },
+                    p: { xs: "2vmax", md: "1.5vmax" }
                   }}
                 >
                   <Typography variant="h6" component="span" fontWeight={700} sx={{ fontSize: "1.2rem" }}>

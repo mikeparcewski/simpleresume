@@ -5,9 +5,9 @@ import ProjectCard from "./ProjectCard";
 import SimpleHeader, { SimpleHeaderParams } from "./SimpleHeader";
 
 const Portfolio = (props: SimpleResume) => {
-  let headerParams: Partial<SimpleHeaderParams> = {
+  const headerParams: Partial<SimpleHeaderParams> = {
     title: props.getProfilePageTitle && props.getProfilePageTitle("Projects"),
-    conf: props,
+    conf: props
   };
 
   return (
@@ -23,7 +23,7 @@ const Portfolio = (props: SimpleResume) => {
           alignItems: "top",
           justifyContent: "center",
           mb: "4vmax",
-          flexWrap: "wrap",
+          flexWrap: "wrap"
         }}
       >
         {props.resume?.projects.map((project: Project) => (
@@ -31,7 +31,7 @@ const Portfolio = (props: SimpleResume) => {
             key={"box" + project.name}
             sx={{
               maxWidth: "350px",
-              m: "2vmax",
+              m: "2vmax"
             }}
           >
             <ProjectCard key={"card" + project.name} {...{ project: project, resume: props }} />

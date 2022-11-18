@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, ThemeProvider, CssBaseline } from "@mui/material";
 import { Resume, SimpleResume } from "../../Objects/SimpleResume";
-import PrintTheme from "../PrintTheme";
+import PrintTheme from "./PrintTheme";
 import PDFHeader from "./PDFHeader";
 import PDFBanner from "./PDFBanner";
 import PDFHighlight, { SectionData } from "./PDFHighlight";
@@ -11,40 +11,40 @@ import { Helmet } from "react-helmet";
 import PDFAdditionalSkills from "./PDFAdditionalSkills";
 
 const PDFResume = (site: SimpleResume) => {
-  const resume: Resume = site.resume!;
+  const resume: Resume = site.resume ?? ({} as Resume);
 
-  const maxHiglightSkills: number = 18;
+  const maxHiglightSkills = 18;
 
   const summary: SectionData = {
-    highlights: resume?.basics.careerSummary!,
+    highlights: resume?.basics.careerSummary ?? [],
     compId: "summary",
     iconPrefix: "fa-solid",
     iconName: "fa-angles-right",
-    header: "Career Summary",
+    header: "Career Summary"
   };
 
   const highlights: SectionData = {
-    highlights: resume?.basics.highlights!,
+    highlights: resume?.basics.highlights ?? [],
     compId: "highlights",
     separator: "|",
-    header: "HIGHLIGHTED ACCOMPLISHMENTS, SKILLS AND EXPERIENCE",
+    header: "HIGHLIGHTED ACCOMPLISHMENTS, SKILLS AND EXPERIENCE"
   };
 
   const skills: PDFSkillsParam = {
     resume: resume,
-    numberOfSkills: maxHiglightSkills,
+    numberOfSkills: maxHiglightSkills
   };
 
   const interesting: SectionData = {
-    highlights: resume?.basics.interestingFacts!,
+    highlights: resume?.basics.interestingFacts ?? [],
     compId: "interesting",
     header: "OTHER INTERESTING FACTS",
     iconPrefix: "fa-solid",
-    iconName: "fa-angles-right",
+    iconName: "fa-angles-right"
   };
 
   // printing
-  let body = document.querySelector("body");
+  const body = document.querySelector("body");
   body?.style.setProperty("-webkit-print-color-adjust", "exact");
   body?.style.setProperty("-moz-print-color-adjust", "exact");
   body?.style.setProperty("-ms-print-color-adjust", "exact");
@@ -66,13 +66,13 @@ const PDFResume = (site: SimpleResume) => {
             flexDirection: "column",
             mt: 1,
             width: "100%",
-            alignItems: "center",
+            alignItems: "center"
           }}
         >
           <Box
             sx={{
               width: "19.7cm",
-              alignItems: "left",
+              alignItems: "left"
             }}
           >
             <PDFHeader {...site} />
@@ -85,7 +85,7 @@ const PDFResume = (site: SimpleResume) => {
 
             <PDFSkills {...skills} />
 
-            <PDFWork {...site.resume!} />
+            <PDFWork {...(site.resume ?? ({} as Resume))} />
 
             <PDFAdditionalSkills {...skills} />
 

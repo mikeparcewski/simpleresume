@@ -6,14 +6,14 @@ import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
 const SiteMasthead = (props: SimpleResume) => {
-  let titles: string[] = props.resume?.basics?.titles!;
-  if (titles === undefined) titles = [];
+  let titles: string[] = [];
+  if (props.resume?.basics?.titles !== undefined) titles = props.resume?.basics?.titles;
   let embedded = "<" + titles[0].replaceAll(" ", "_") + ">\n";
-  titles.slice(1).forEach((title: string, index: number) => (embedded += "   <" + title.replaceAll(" ", "_") + " />\n"));
+  titles.slice(1).forEach((title: string) => (embedded += "   <" + title.replaceAll(" ", "_") + " />\n"));
   embedded += "</" + titles[0].replaceAll(" ", "_") + ">";
 
-  const codeStyle: Object = {
-    fontSize: "1.3vmax",
+  const codeStyle: Record<string, unknown> = {
+    fontSize: "1.3vmax"
   };
 
   return (
@@ -24,7 +24,7 @@ const SiteMasthead = (props: SimpleResume) => {
           pt: "3vmax",
           bgcolor: "warning.main",
           display: "flex",
-          justifyContent: "center",
+          justifyContent: "center"
         }}
       >
         <Box
@@ -33,12 +33,12 @@ const SiteMasthead = (props: SimpleResume) => {
           sx={{
             alignItems: "center",
             justifyContent: "center",
-            mt: 1,
+            mt: 1
           }}
         >
           <Box
             sx={{
-              pb: "3vmax",
+              pb: "3vmax"
             }}
           >
             <ReactRoundedImage image={require("../Customize/masthead-lead.gif")} alt={props.siteTitle} roundedSize="13" imageWidth="230" imageHeight="230"></ReactRoundedImage>
@@ -48,7 +48,7 @@ const SiteMasthead = (props: SimpleResume) => {
             sx={{
               ml: { xs: 0, md: 6 },
               pb: "3vmax",
-              maxWidth: "95%",
+              maxWidth: "95%"
             }}
           >
             <SyntaxHighlighter language="xml" style={vs2015} showLineNumbers={false} customStyle={codeStyle}>

@@ -2,14 +2,14 @@ import { createTheme } from "@mui/material/styles";
 import themeData from "../Customize/configs/Theme.json";
 
 // navbar theme
-let SiteTheme = createTheme(themeData);
+const BaseSiteTheme = createTheme(themeData);
 
-SiteTheme = createTheme(SiteTheme, {
+const SiteTheme = createTheme(BaseSiteTheme, {
   palette: {
     info: {
-      main: SiteTheme.palette.secondary.main,
-    },
-  },
+      main: BaseSiteTheme.palette.secondary.main
+    }
+  }
 });
 
 export default SiteTheme;

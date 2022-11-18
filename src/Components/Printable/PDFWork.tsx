@@ -8,8 +8,8 @@ interface WorkMap {
 }
 
 const PDFWork = (resume: Resume) => {
-  let workMap: WorkMap = {};
-  resume.work.forEach((work: Work, index: number) => {
+  const workMap: WorkMap = {};
+  resume.work.forEach((work: Work) => {
     if (workMap[work.name] === undefined) workMap[work.name] = [];
     workMap[work.name].push(work);
   });
@@ -21,7 +21,7 @@ const PDFWork = (resume: Resume) => {
           borderBottom: 1,
           fontSize: "1.3vmax",
           color: "primary.contrastText",
-          fontWeight: "700",
+          fontWeight: "700"
         }}
       >
         PROFESSIONAL EXPERIENCE
@@ -29,7 +29,7 @@ const PDFWork = (resume: Resume) => {
 
       <Box
         sx={{
-          mb: 2,
+          mb: 2
         }}
       >
         {Object.values(workMap).map((jobs: Work[], index: number) => (
@@ -39,7 +39,7 @@ const PDFWork = (resume: Resume) => {
               mt: 1,
               mb: 3,
               alignItems: "left",
-              justifyItems: "left",
+              justifyItems: "left"
             }}
           >
             <PDFWorkItem roles={jobs} />
