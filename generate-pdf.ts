@@ -1,5 +1,5 @@
-const puppeteer = require("puppeteer");
-const fs = require("fs");
+import puppeteer from "puppeteer";
+import fs from "fs";
 
 printPDF().then((content) => {
   fs.writeFile("test.pdf", content, (err) => {
@@ -15,10 +15,12 @@ async function printPDF() {
   await page.goto("http://localhost:3000/print", { waitUntil: "networkidle0" });
   const pdf = await page.pdf({
     format: "A4",
-    marginsType: 0,
     margin: {
       top: 25,
-    },
+      left: 0,
+      bottom: 0,
+      right: 0
+    }
   });
 
   await browser.close();

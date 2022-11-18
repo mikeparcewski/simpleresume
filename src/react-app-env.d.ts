@@ -1,4 +1,3 @@
-/// <reference types="react-scripts" />
 declare module "react-rounded-image";
 declare module "@material-ui/core/styles/createMuiTheme";
 declare module "@types/fg-loadcss";

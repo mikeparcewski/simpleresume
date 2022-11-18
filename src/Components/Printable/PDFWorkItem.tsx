@@ -8,7 +8,7 @@ import { IconName, IconPrefix } from "@fortawesome/fontawesome-svg-core";
 const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
   roles.sort((a, b) => b.startDate.localeCompare(a.startDate));
   let highlights: string[] = [];
-  roles.forEach((role: Work, index: number) => (highlights = highlights.concat(role.highlights)));
+  roles.forEach((role: Work) => (highlights = highlights.concat(role.highlights)));
 
   return (
     <>
@@ -16,14 +16,14 @@ const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          my: 2,
+          my: 2
         }}
       >
         <Typography
           sx={{
             fontSize: "1.1vmax",
             fontFamily: "Montserrat",
-            fontWeight: "700",
+            fontWeight: "700"
           }}
         >
           {roles[0].name} | {roles[0].location}
@@ -36,19 +36,19 @@ const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
               display: "flex",
               fontSize: ".9vmax",
               fontWeight: "500",
-              width: "100%",
+              width: "100%"
             }}
           >
             <Box
               sx={{
-                width: "80%",
+                width: "80%"
               }}
             >
               {role.position}
             </Box>
             <Box
               sx={{
-                width: "20%",
+                width: "20%"
               }}
             >
               <em>
@@ -61,7 +61,7 @@ const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
         <Box
           sx={{
             fontSize: "1vmax",
-            my: 1.5,
+            my: 1.5
           }}
         >
           {roles[0].summary}
@@ -74,13 +74,13 @@ const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
               display: "flex",
               my: 0.5,
               pl: 2,
-              fontSize: "1vmax",
+              fontSize: "1vmax"
             }}
           >
             <Box
               sx={{
                 fontSize: ".6vmax",
-                pt: 0.4,
+                pt: 0.4
               }}
             >
               <FontAwesomeIcon icon={["fa-solid" as IconPrefix, "fa-chevron-right" as IconName]} />
@@ -89,7 +89,7 @@ const PDFWorkItem: React.FC<{ roles: Work[] }> = ({ roles }) => {
             <Box
               sx={{
                 pl: 1,
-                width: "95%",
+                width: "95%"
               }}
             >
               {highlight}

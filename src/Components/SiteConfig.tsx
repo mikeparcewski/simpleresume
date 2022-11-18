@@ -5,7 +5,7 @@ import { SimpleType } from "../Objects/SimpleType";
 
 export let DEF_ICONDETAIL: IconDetail = {
   name: "link-slash",
-  clz: "fas",
+  clz: "fas"
 };
 
 type CONFIG_TYPE = {
@@ -17,7 +17,7 @@ const CONFIGS: CONFIG_TYPE[] = [
   { element: "icons", file: require("../Customize/configs/Icons.json") },
   { element: "resume", file: require("../Customize/configs/SiteNav.json") },
   { file: require("../Customize/configs/ResumeOverrides.json") },
-  { element: "resume", file: require("../Customize/MyResume.json") },
+  { element: "resume", file: require("../Customize/MyResume.json") }
 ];
 
 function SiteConfig(): SimpleResume {
@@ -25,10 +25,13 @@ function SiteConfig(): SimpleResume {
 
   // load the individual configs
   CONFIGS.forEach((config: CONFIG_TYPE) => {
-    let body = {} as SimpleType;
-    if (config.element) body[config.element] = parseJSON(config.file);
-    else body = parseJSON(config.file);
-    siteData = deepmerge.all([siteData, body]);
+    if (config.element) {
+      const body = {} as SimpleType;
+      body[config.element] = parseJSON(config.file);
+      siteData = deepmerge.all([siteData, body]);
+    } else {
+      siteData = deepmerge.all([siteData, parseJSON(config.file)]);
+    }
   });
 
   // set the default (err) icon
@@ -94,11 +97,12 @@ function getIconDetail(name: string, siteData: SimpleResume): IconDetail {
  * @param req
  * @returns
  */
-function parseJSON(req: typeof require): any {
+function parseJSON(req: typeof require): JSON {
   try {
-    return JSON.parse(JSON.stringify(req))!;
+    const json = JSON.stringify(req) ?? "{}";
+    return JSON.parse(json);
   } catch (err) {
     console.log(err, req);
   }
-  return {};
+  return {} as JSON;
 }

@@ -3,14 +3,14 @@ import { Box, Typography } from "@mui/material";
 import { Profile, Resume, SimpleResume } from "../../Objects/SimpleResume";
 
 const PDFHeader = (site: SimpleResume) => {
-  const resume: Resume = site.resume!;
+  const resume: Resume = site.resume ?? ({} as Resume);
 
   return (
     <>
       <Box
         sx={{
           borderBottom: 1,
-          display: "flex",
+          display: "flex"
         }}
       >
         {resume.basics.name.split(" ").map((part: string, index: number) => (
@@ -20,7 +20,7 @@ const PDFHeader = (site: SimpleResume) => {
             sx={{
               mr: 1,
               fontWeight: index % 2 ? "700" : "300",
-              color: index % 2 ? "primary.main" : "primary.contrastText",
+              color: index % 2 ? "primary.main" : "primary.contrastText"
             }}
           >
             {part.toLocaleUpperCase()}
@@ -33,7 +33,7 @@ const PDFHeader = (site: SimpleResume) => {
           sx={{
             display: "flex",
             mt: 1.2,
-            fontSize: ".8vmax",
+            fontSize: ".8vmax"
           }}
         >
           {site.resume?.basics.email && <Box>{site.resume?.basics.email}</Box>}
@@ -43,7 +43,7 @@ const PDFHeader = (site: SimpleResume) => {
               sx={{
                 ml: 1,
                 borderLeft: 1,
-                pl: 1,
+                pl: 1
               }}
             >
               {site.resume?.basics.url}
@@ -52,17 +52,17 @@ const PDFHeader = (site: SimpleResume) => {
 
           <Box
             sx={{
-              flexGrow: 1,
+              flexGrow: 1
             }}
           >
             <Box
               sx={{
                 display: "flex",
-                justifyContent: "right",
+                justifyContent: "right"
               }}
             >
               {resume.basics.profiles
-                .filter((profile: Profile, index: number) => {
+                .filter((profile: Profile) => {
                   return profile.url.startsWith("http");
                 })
                 .map((profile, index) => (
@@ -71,7 +71,7 @@ const PDFHeader = (site: SimpleResume) => {
                     sx={{
                       ml: 2,
                       borderLeft: index === 0 ? 0 : 1,
-                      pl: 2,
+                      pl: 2
                     }}
                   >
                     <strong>{profile.network}</strong>: <em>{profile.username}</em>

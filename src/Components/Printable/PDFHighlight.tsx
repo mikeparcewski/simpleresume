@@ -21,7 +21,7 @@ const PDFHighlight = (data: SectionData) => {
       {highlights && highlights.length > 0 && (
         <Box
           sx={{
-            mt: 2,
+            mt: 2
           }}
         >
           <Box
@@ -30,7 +30,7 @@ const PDFHighlight = (data: SectionData) => {
               fontSize: "1.3vmax",
               mb: 1,
               color: "primary.contrastText",
-              fontWeight: "700",
+              fontWeight: "700"
             }}
           >
             {data.header.toUpperCase()}
@@ -42,7 +42,7 @@ const PDFHighlight = (data: SectionData) => {
               sx={{
                 display: "flex",
                 my: 0.6,
-                fontSize: ".9vmax",
+                fontSize: ".9vmax"
               }}
             >
               {data.iconName && (
@@ -53,11 +53,11 @@ const PDFHighlight = (data: SectionData) => {
 
               <Box
                 sx={{
-                  pl: data.iconName ? 0.5 : 0,
+                  pl: data.iconName ? 0.5 : 0
                 }}
               >
                 <strong>
-                  {highlight.name} {data.separator!}
+                  {highlight.name} {data.separator ?? ""}
                 </strong>{" "}
                 {highlight.summary}
               </Box>

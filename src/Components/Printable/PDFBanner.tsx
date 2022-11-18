@@ -3,7 +3,7 @@ import { Box, Typography } from "@mui/material";
 import { Resume, SimpleResume } from "../../Objects/SimpleResume";
 
 const PDFHeader = (site: SimpleResume) => {
-  const resume: Resume = site.resume!;
+  const resume: Resume = site.resume ?? ({} as Resume);
 
   return (
     <>
@@ -16,7 +16,7 @@ const PDFHeader = (site: SimpleResume) => {
             mt: 1,
             alignItems: "center",
             justifyContent: "center",
-            display: "flex",
+            display: "flex"
           }}
         >
           {resume.basics.titles.map((title: string, index: number) => (
@@ -26,7 +26,7 @@ const PDFHeader = (site: SimpleResume) => {
                 mr: 2,
                 px: 2,
                 borderLeft: index === 0 ? 0 : 1,
-                fontSize: ".7vmax",
+                fontSize: ".7vmax"
               }}
             >
               {title}
