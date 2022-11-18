@@ -175,7 +175,7 @@ export default function Header(config: SimpleResume) {
             <ListItemText primary="Home" />
           </ListItem>
           {config.resume?.basics.profiles?.map((profile: Profile) => (
-            <ListItem component="a" key={profile.network} href={profile.url}>
+            <ListItem component="a" key={profile.network} href={profile.url} target={Config.isBrand(config, profile) || profile.url === "print" ? "blank" : ""}>
               <ListItemIcon>
                 <FontAwesomeIcon
                   icon={[

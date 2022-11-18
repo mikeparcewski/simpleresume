@@ -15,7 +15,7 @@ const Footer = (config: SimpleResume) => {
         sx={{
           py: "2rem",
           bgcolor: "primary.main",
-          alignItems: "center",
+          alignItems: "center"
         }}
       >
         <Box>
@@ -24,7 +24,7 @@ const Footer = (config: SimpleResume) => {
               fontSize: "3vmax",
               fontWeight: 800,
               display: "block",
-              color: "primary.contrastText",
+              color: "primary.contrastText"
             }}
           >
             LEARN MORE
@@ -37,7 +37,7 @@ const Footer = (config: SimpleResume) => {
             mt: 1,
             color: "primary.contrastText",
             justifyContent: "center",
-            alignContent: "center",
+            alignContent: "center"
           }}
         >
           {config.resume?.basics.profiles?.map((profile: Profile, index: number) => (
@@ -54,13 +54,13 @@ const Footer = (config: SimpleResume) => {
                     fontSize: "1vmax",
                     border: 1,
                     "& .MuiTooltip-arrow": {
-                      color: "primary.contrastText",
-                    },
-                  },
-                },
+                      color: "primary.contrastText"
+                    }
+                  }
+                }
               }}
               sx={{
-                color: "primary.main",
+                color: "primary.main"
               }}
             >
               <IconButton
@@ -69,15 +69,16 @@ const Footer = (config: SimpleResume) => {
                   px: "2vmax",
                   color: "primary.contrastText",
                   fontSize: "3vmax",
-                  fontWeight: "800",
+                  fontWeight: "800"
                 }}
-                onClick={() => (window.location.href = profile.url)}
+                target={Config.isBrand(config, profile) || profile.url === "print" ? "blank" : ""}
+                href={profile.url}
               >
                 <FontAwesomeIcon
                   aria-label={profile.network}
                   icon={[
                     config && config.getIconPrefix ? config.getIconPrefix(profile.network) : (Config.DEF_ICONDETAIL?.clz as IconPrefix),
-                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName),
+                    config && config.getIconName ? config.getIconName(profile.network) : (Config.DEF_ICONDETAIL?.name as IconName)
                   ]}
                 />
               </IconButton>
@@ -90,7 +91,7 @@ const Footer = (config: SimpleResume) => {
             mt: "1vmax",
             mx: "1vmax",
             color: "primary.contrastText",
-            maxWidth: "80%",
+            maxWidth: "80%"
           }}
         >
           This template is open source. Build your own&nbsp;

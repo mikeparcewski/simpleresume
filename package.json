@@ -42,11 +42,10 @@
     "wordcloud": "^1.2.2"
   },
   "scripts": {
-    "prepare": "node ./generate-manifest.ts",
-    "prestart": "node ./generate-manifest.ts",
+    "prepare": "eslint --ext .ts,.tsx . && node ./generate-manifest.ts",
+    "prestart": "eslint --ext .ts,.tsx . && node ./generate-manifest.ts",
     "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "predeploy": "eslint --ext .ts,.tsx . && npm run build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
