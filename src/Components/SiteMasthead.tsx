@@ -8,8 +8,10 @@ import { vs2015 } from "react-syntax-highlighter/dist/esm/styles/hljs";
 const SiteMasthead = (props: SimpleResume) => {
   const titles: string[] = props.resume?.basics?.titles ?? [];
   let embedded = "<" + (titles.length > 0 ? titles[0].replaceAll(" ", "_") : "") + ">\n";
-  titles.slice(1).forEach((title: string) => (embedded += "   <" + title.replaceAll(" ", "_") + " />\n"));
-  embedded = "</" + (titles.length > 0 ? titles[0].replaceAll(" ", "_") : "") + ">";
+  titles.slice(1).forEach((title: string) => {
+    embedded += "   <" + title.replaceAll(" ", "_") + " />\n";
+  });
+  embedded += "</" + (titles.length > 0 ? titles[0].replaceAll(" ", "_") : "") + ">";
 
   const codeStyle: Record<string, unknown> = {
     fontSize: "1.3vmax"
