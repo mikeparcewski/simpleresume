@@ -130,21 +130,6 @@
         "type": "Handmade"
       },
       {
-        "name": "DragonflyOIB",
-        "description": "An old fishing cottage that I remodeled and currently run as a rental.  A mix of my favorite hotel and bar experiences coupled with custom built furniture and small technology touches the house is complimented by a website, social media, and even custom branded gifts.",
-        "highlights": [
-          "Completely remodeled - did electrical, plumbing, walls and cabinets",
-          "Built furniture indoors and out",
-          "Developed react website",
-          "Developed marketing programs for Facebook, Instagram & Snapchat",
-          "Maintained as an LLC"
-        ],
-        "img": "https://media.giphy.com/media/kdswhdEtHtsCRENnpP/giphy.gif",
-        "url": "https://dragonflyoib.com",
-        "roles": ["Owner", "Designer", "Builder"],
-        "type": "Rental"
-      },
-      {
         "name": "Entryway Table",
         "description": "Built for the entryway it sits in, this entryway table/cabinet was designed from a bunch of different pictures my wife liked.  Oversized and built with rustic hardware, the hardest part was to build drawers without the sliding hardware (just wood pieces)",
         "highlights": ["Based on hodgepodge of pinterest ideas", "Impossible to move (truly solid)"],
