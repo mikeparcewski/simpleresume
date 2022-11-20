@@ -130,15 +130,6 @@
         "type": "Handmade"
       },
       {
-        "name": "Entryway Table",
-        "description": "Built for the entryway it sits in, this entryway table/cabinet was designed from a bunch of different pictures my wife liked.  Oversized and built with rustic hardware, the hardest part was to build drawers without the sliding hardware (just wood pieces)",
-        "highlights": ["Based on hodgepodge of pinterest ideas", "Impossible to move (truly solid)"],
-        "keywords": ["Furniture", "Farmhouse Design"],
-        "img": "https://media.giphy.com/media/68mirwYTwoAXWG3RC1/giphy.gif",
-        "roles": ["Designer", "Builder"],
-        "type": "Handmade"
-      },
-      {
         "name": "Serverless on Azure",
         "description": "Based on on publicalbum.orgs google photos embed, this python serverless function lets you embed your google photos public albums in your website seamlessly by returning a json payload ready for whatever you can dream up.",
         "highlights": ["Used to help teams understand Visual Studio integration with VS Code", "Showcase using lightweight functions instead of contasiners"],
@@ -157,6 +148,15 @@
         "img": "https://media.giphy.com/media/BktVOgussh37LhZdAR/giphy.gif",
         "roles": ["Creator"],
         "type": "Open Source Library"
+      },
+      {
+        "name": "Entryway Table",
+        "description": "Built for the entryway it sits in, this entryway table/cabinet was designed from a bunch of different pictures my wife liked.  Oversized and built with rustic hardware, the hardest part was to build drawers without the sliding hardware (just wood pieces)",
+        "highlights": ["Based on hodgepodge of pinterest ideas", "Impossible to move (truly solid)"],
+        "keywords": ["Furniture", "Farmhouse Design"],
+        "img": "https://media.giphy.com/media/68mirwYTwoAXWG3RC1/giphy.gif",
+        "roles": ["Designer", "Builder"],
+        "type": "Handmade"
       }
     ]
   }
