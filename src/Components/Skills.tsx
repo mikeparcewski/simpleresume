@@ -1,8 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import SimpleHeader, { SimpleHeaderParams } from "./SimpleHeader";
-import { Box } from "@mui/material";
 import { SimpleResume, Skill } from "../Objects/SimpleResume";
-import WordCloud from "wordcloud";
+import WordCloud from "react-d3-cloud";
+import { Box } from "@mui/system";
+
+interface CloudSkill {
+  text: string;
+  value: number;
+}
 
 const Skills = (props: SimpleResume) => {
   const headerParams: Partial<SimpleHeaderParams> = {
@@ -10,38 +15,27 @@ const Skills = (props: SimpleResume) => {
     conf: props
   };
 
+  const words: CloudSkill[] = (props.resume?.skills ?? ([] as Skill[])).map((skill: Skill) => {
+    return { text: skill.name.toLocaleLowerCase(), value: skill.level };
+  });
+
   const [width] = React.useState(window.innerWidth * 0.78);
   const [height] = React.useState(window.innerHeight * 0.68);
-
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    WordCloud(canvasRef.current, {
-      list: Array.from(props.resume?.skills ?? ([] as Skill[]), (skill: Skill) => [skill.name, skill.level]),
-      shape: "circle",
-      color: "random-dark",
-      minRotation: 0,
-      maxRotation: 0,
-      shrinkToFit: true,
-      minSize: 2
-    });
-  }, [props.resume]);
+  const fontSize = (word: CloudSkill) => {
+    const size = word.value <= 40 ? word.value * 0.5 : word.value * 0.6;
+    console.log(word.text + ":" + word.value);
+    return size;
+  };
+  const rotate = (word: CloudSkill) => (word.value % 90) - 45;
 
   return (
     <>
       <SimpleHeader {...headerParams} />
-
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          my: "2vmax"
-        }}
-      >
-        <canvas ref={canvasRef} width={width} height={height} />
+      <Box padding={{ sm: 0, md: 4 }}>
+        <WordCloud spiral="rectangular" width={width} height={height} data={words} fontWeight={500} fontSize={fontSize} rotate={rotate} padding={0} font="Montserrat" />
       </Box>
     </>
   );
 };
+
 export default Skills;
