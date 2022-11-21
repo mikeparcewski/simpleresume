@@ -23,7 +23,6 @@ const Skills = (props: SimpleResume) => {
   const [height] = React.useState(window.innerHeight * 0.68);
   const fontSize = (word: CloudSkill) => {
     const size = word.value <= 40 ? word.value * 0.5 : word.value * 0.6;
-    console.log(word.text + ":" + word.value);
     return size;
   };
   const rotate = (word: CloudSkill) => (word.value % 90) - 45;
